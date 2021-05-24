@@ -2,6 +2,10 @@ DQCS
 ####
 This page collects the experience from the group members on doing DQCS shifts.
 
+User Experience
+^^^^^^^^^^^^^^^
+ - **Maurizio**: the shifter pages in the DIRAC portal were not shown out of the box for. Had to wait 2-3 days. Still cannot access the plots through the link below, had to open `Application->Administration->Public State Manager`.
+
 Useful Links
 ^^^^^^^^^^^^
  - `Shift preparation checklist <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/preparation.html>`_
