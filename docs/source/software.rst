@@ -20,4 +20,6 @@ A Framework that can be used to perform Toy experiments in ROOT easily. `ToyExpe
 Useful Links
 ^^^^^^^^^^^^
 There are many useful software community-developed. A few suggestions below:
+ - `LHCb Starterkit First Analysis Steps <https://lhcb.github.io/starterkit-lessons/first-analysis-steps/README.html>`_
+ - `LHCb Starterkit Second Analysis Steps <https://lhcb.github.io/starterkit-lessons/second-analysis-steps/README.html>`_
  - `Scikit-HEP <https://github.com/scikit-hep>`_
