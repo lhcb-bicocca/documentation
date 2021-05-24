@@ -4,7 +4,7 @@ This page collects the experience from the group members on doing DQCS shifts.
 
 Useful Links
 ^^^^^^^^^^^^
- - `Shift preparation technique <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/preparation.html>`_
+ - `Shift preparation checklist <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/preparation.html>`_
  - `Computing wiki <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/computing.html>`_
  - `Training page <https://indico.cern.ch/event/992851/>`_
  - `Shift DB <https://lbshiftdb.cern.ch/>`_
