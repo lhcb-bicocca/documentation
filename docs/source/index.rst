@@ -13,6 +13,8 @@ service tasks and anything that could make our learning curve faster.
    :maxdepth: 2
    :caption: Contents:
 
+   lhcbdocs
+   software
    dqcs
 
 
