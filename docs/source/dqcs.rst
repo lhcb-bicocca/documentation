@@ -16,3 +16,4 @@ Useful Links
  - `Tri-weekly meetings on Indico <https://indico.cern.ch/category/4206/>`_
  - `Elog <https://lblogbook.cern.ch/Operations/?id=33992>`_
  - `GGUS page for tickets submission <https://ggus.eu/index.php?mode=index>`_
+ - `known issues <https://codimd.web.cern.ch/cw8DCELOTQSYV5LV-WmUsw?both>`_
