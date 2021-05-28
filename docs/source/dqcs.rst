@@ -4,7 +4,8 @@ This page collects the experience from the group members on doing DQCS shifts.
 
 User Experience
 ^^^^^^^^^^^^^^^
- - **Maurizio**: the shifter pages in the DIRAC portal were not shown out of the box for. Had to wait 2-3 days. Still cannot access the plots through the link below, had to open `Application->Administration->Public State Manager`.
+ - **Suggestions**: Prepare for your shift at least a week in advance! Mattermost channel needs invitation by one of the participants (you can ask one of us that already took a shift).
+ - **21--28/5/2021 Maurizio**: the shifter pages in the DIRAC portal were not shown out of the box for. Had to wait 2-3 days. Issue was later solved, due to an overloaded machine. Still cannot access the plots through the link below, had to open `Application->Administration->Public State Manager`. SomeWhen chairing the Computing meeting you don't need to take minutes. Usually there is no need to submit tickets. When noticing something unusual report it to the mattermost channel.
 
 Useful Links
 ^^^^^^^^^^^^
