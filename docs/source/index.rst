@@ -17,6 +17,7 @@ service tasks and anything that could make our learning curve faster.
    software
    dqcs
    quantum
+   cern
 
 
 Indices and tables
