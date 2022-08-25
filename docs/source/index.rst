@@ -16,6 +16,7 @@ service tasks and anything that could make our learning curve faster.
    lhcbdocs
    software
    dqcs
+   ml
    quantum
    cern
 
