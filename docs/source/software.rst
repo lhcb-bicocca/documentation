@@ -7,7 +7,7 @@ AnalysisHelpers
 Developed by Maurizio along many years of analysis activity, it provides some useful
 functions to manipulate ROOT objects in python. It is particularly useful to prepare
 LHCb-style plots, declare histograms and trees, and run RooFit fits in a shorter number
-of commands than usual. `AnalysisHelpers <https://gitlab.cern.ch/mamartin/AnalysisHelpers>`_
+of commands than usual. `AnalysisHelpers <https://gitlab.cern.ch/mamartin/AnalysisHelpers>`_ (`API <https://maurizios-analysis-helpers.docs.cern.ch>`_)
 
 PlotUtils
 ^^^^^^^^^
