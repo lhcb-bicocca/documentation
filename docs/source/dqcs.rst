@@ -4,6 +4,10 @@ This page collects the experience from the group members on doing DQCS shifts.
 
 User Experience
 ^^^^^^^^^^^^^^^
+ * **28/11--4/12/2022 Maurizio**:
+
+  - You should clone the meeting pages in indico
+ 
  * **Suggestions**:
 
   - Prepare for your shift at least a week in advance!
