@@ -25,6 +25,10 @@ Useful Links
  - `Shift preparation checklist <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/preparation.html>`_
  - `Computing wiki <https://lhcb-dqcs-docs.web.cern.ch/lhcb-dqcs-docs/computing.html>`_
  - `Training page <https://indico.cern.ch/event/992851/>`_
+ - Nightlies to check:
+   - `lhcb-gaussino <https://lhcb-nightlies.web.cern.ch/nightly/lhcb-gaussino/>`_
+   - `lhcb-sim10 <https://lhcb-nightlies.web.cern.ch/nightly/lhcb-sim10/>`_
+   - `lhcb-gauss-dev <https://lhcb-nightlies.web.cern.ch/nightly/lhcb-gauss-dev/>`_
  - `Shift DB <https://lbshiftdb.cern.ch/>`_
  - `DIRAC Portal <https://lhcb-portal-dirac.cern.ch/DIRAC/s:LHCb-Production/g:lhcb_shifter/?view=tabs&theme=Neptune&url_state=1|*DIRAC.PublicStateManager.classes.PublicStateManager:,Shifter_Overview,my_shifter_overview>`_
  - `Tri-weekly meetings on Indico <https://indico.cern.ch/category/4206/>`_
