@@ -9,3 +9,4 @@ Access to GPUs at CERN is possible by connecting to the node ``lxplus-gpu.cern.c
 Books
 ^^^^^
  - `Probabilistic Machine Learning <https://probml.github.io/pml-book/>`_
+ - `Deep Learning Book <https://www.deeplearningbook.org>`_
