@@ -39,6 +39,9 @@ Available services include:
 - eos
 - afs
 - cuda
+- gcc11
+
+For any further request, please contact **brownie-admins@lists.mib.infn.it**.
  
 Please note that to access your *afs* and *eos* area, you should first create your afs token by ``kinit`` and connect it to the *eos* service.
 We wrote a script to allow this in one shot
@@ -47,8 +50,12 @@ We wrote a script to allow this in one shot
 
   $ initialise_afs_and_eos.sh <cern_user_name>
 
+By default the system is built on ``gcc4.8.5``. If you want to compile your programs in ``gcc11``, simply run
 
-For any further request, please contact **brownie-admins@lists.mib.infn.it**.
+.. code-block:: console
+ 
+  $ scl enable devtoolset-11 bash
+  
 
 Storage
 *******
