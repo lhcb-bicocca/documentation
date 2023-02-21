@@ -1,7 +1,13 @@
 Bicocca INFN Sever
 ##################
 We have a server running in the cluster of the MIB INFN section.
-The server runs on a CentOS7 operating system.
+The server runs on a CentOS7 operating system and features
+
+- NVIDIA A100 80Gb GPU
+- 2x26 core Intel Xeon 5320 2.2GHz CPU
+- 256Gb RAM
+- 3x1920Gb SSD SATAIII disks
+- 4x18Tb SATAIII 7200rpm HDD disks
 
 Requesting an account
 *********************
