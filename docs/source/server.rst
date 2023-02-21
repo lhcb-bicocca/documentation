@@ -38,8 +38,8 @@ Available services include:
 - cvmfs
 - eos
 - afs
-- cuda
-- gcc11
+- cuda12.0
+- gcc11.2.1
 
 For any further request, please contact **brownie-admins@lists.mib.infn.it**.
  
@@ -55,7 +55,12 @@ By default the system is built on ``gcc4.8.5``. If you want to compile your prog
 .. code-block:: console
  
   $ scl enable devtoolset-11 bash
+
+The CUDA libraries are not automatically available at login, to load them (and enable gcc11)
+
+.. code-block:: console
   
+  $ load_cuda_environment.sh
 
 Storage
 *******
