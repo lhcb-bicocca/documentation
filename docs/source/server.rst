@@ -46,6 +46,7 @@ Available services include:
 - afs
 - cuda12.0
 - gcc11.2.1
+- ROOT v6.26/10
 
 For any further request, please contact **brownie-admins@lists.mib.infn.it**.
  
@@ -67,6 +68,13 @@ The CUDA libraries are not automatically available at login, to load them (and e
 .. code-block:: console
   
   $ load_cuda_environment.sh
+
+To load ROOT into the environment
+
+.. code-block:: console
+
+  $ scl enable devtoolset-11 bash
+  $ source /usr/local/root_src/root_v62610_gcc11_py3/bin/thisroot.sh
 
 Storage
 *******
