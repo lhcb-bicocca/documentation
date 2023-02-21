@@ -10,7 +10,7 @@ First you need to have a valid computing account with MIB-INFN and then you can 
 Once approved, you will be available to connect with the username and password of your MIB account.
 
 You will also be added to the brownie users' mailing list (**brownie-users@lists.mib.infn.it**). 
-Feel free to send messages to this list for discussing troubles or software requests related to the software.
+Feel free to send messages to this list for discussing troubles or software requests.
 
 Connection
 ==========
