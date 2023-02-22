@@ -47,6 +47,7 @@ Available services include:
 - cuda12.0
 - gcc11.2.1
 - ROOT v6.26/10
+- docker
 
 For any further request, please contact **brownie-admins@lists.mib.infn.it**.
  
