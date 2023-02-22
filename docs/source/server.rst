@@ -77,6 +77,12 @@ To load ROOT into the environment
   $ scl enable devtoolset-11 bash
   $ source /usr/local/root_src/root_v62610_gcc11_py3/bin/thisroot.sh
 
+Please note that there could be some problems with ROOT `RConfig.hxx` in this install area that would make compilations of other packages depending on ROOT fail (e.g. GooFit). Therefore, unless a standalone ROOT compilation is needed, it is best to load the `LCG <https://lcginfo.cern.ch>`_ environment from cvmfs
+
+.. code-block:: console
+
+  $ source /cvmfs/sft.cern.ch/lcg/views/setupViews.sh LCG_102b x86_64-centos7-gcc11-opt
+
 Storage
 *******
 Storage is divided in three areas
