@@ -76,6 +76,7 @@ You can install it by calling
     pip install nvidia-tensorrt
 
 Even without it Tensorflow will still work.
+
 .. If the libraries are still not found, you could try to symlink them
 
 .. .. code-block:: bash
