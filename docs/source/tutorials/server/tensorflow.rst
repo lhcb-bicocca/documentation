@@ -100,3 +100,10 @@ that, apart the previous warnings, should return
 
 Running TensorFlow
 ******************
+
+Simply activate the environment
+
+.. code-block:: bash
+
+    conda activate tf
+
