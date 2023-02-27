@@ -77,15 +77,14 @@ You can install it by calling
 
 Even without it Tensorflow will still work.
 
-.. If the libraries are still not found, you could try to symlink them
+If the libraries are still not found and the warning message upsets you, you could try to symlink them (at your own risk!)
 
-.. .. code-block:: bash
+.. code-block:: bash
     
-..     ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvinfer.so.8 $HOME/miniconda3/envs/tf/lib/libnvinfer.so.7
-..     ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvinfer_plugin.so.8 $HOME/miniconda3/envs/tf/lib/libnvinfer_plugin.so.7
-..     ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvonnxparser.so.8 $HOME/miniconda3/envs/tf/lib/libnvonnxparser.so.7
-..     ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvparsers.so.8 $HOME/miniconda3/envs/tf/lib/libnvparsers.so.7
-
+    ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvinfer.so.8 $HOME/miniconda3/envs/tf/lib/libnvinfer.so.7
+    ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvinfer_plugin.so.8 $HOME/miniconda3/envs/tf/lib/libnvinfer_plugin.so.7
+    ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvonnxparser.so.8 $HOME/miniconda3/envs/tf/lib/libnvonnxparser.so.7
+    ln -s $HOME/miniconda3/envs/tf/lib/python3.9/site-packages/tensorrt/libnvparsers.so.8 $HOME/miniconda3/envs/tf/lib/libnvparsers.so.7
 
 Similarly you can test that Tensorflow sees the GPU
 
@@ -98,3 +97,6 @@ that, apart the previous warnings, should return
 .. code-block:: bash
 
     [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+
+Running TensorFlow
+******************
