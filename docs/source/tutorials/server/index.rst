@@ -6,3 +6,4 @@ Server Tutorials
    :caption: Contents:
    
    lhcb_environment
+   tensorflow
