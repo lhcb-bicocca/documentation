@@ -20,6 +20,7 @@ service tasks and anything that could make our learning curve faster.
    ml
    quantum
    cern
+   tutorials
 
 
 Indices and tables
