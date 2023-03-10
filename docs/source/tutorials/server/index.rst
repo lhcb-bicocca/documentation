@@ -7,3 +7,4 @@ Server Tutorials
    
    lhcb_environment
    tensorflow
+   useful
