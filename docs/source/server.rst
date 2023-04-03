@@ -91,4 +91,5 @@ Storage is divided in three areas
 - ``/data01`` 17.5TB of HDD. Use it for long term storage and backup.
 - ``/data02`` 17.5TB of HDD. Use it for long term storage and backup.
 
-The SSD disk is much faster than HDD, plese take this in consideration when running your programs. 
+The SSD disk is much faster than HDD, plese take this in consideration when running your programs.
+A **scratch** area is located at ``/scratch/gr1/lhcb``. Please use it sensibly. Checks will be performed routinely to delete file not accessed for long.
