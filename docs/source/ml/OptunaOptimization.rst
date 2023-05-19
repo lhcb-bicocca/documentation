@@ -7,7 +7,7 @@ Hyperparameter Optimization with Optuna on cluster GPU Bicocca
 The example dataset is taken from: <https://scikit-learn.org/stable/datasets/toy_dataset.html>
 
 
-.. code-block:: python
+```ruby
  import time
  import datetime
  import tensorflow as tf
@@ -188,3 +188,4 @@ The example dataset is taken from: <https://scikit-learn.org/stable/datasets/toy
   fig3 = optuna.visualization.matplotlib.plot_optimization_history(study)
   #fig3.figure.set_size_inches(10, 8)
   fig3.figure.savefig(folderBDT+'History_optimization_'+name+'.pdf')
+```
