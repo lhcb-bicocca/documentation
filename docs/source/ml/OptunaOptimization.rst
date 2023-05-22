@@ -6,7 +6,8 @@ Hyperparameter Optimization with Optuna on cluster GPU Bicocca.
 
 
 Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning.
-Documentation: https://optuna.readthedocs.io/.
+
+Optuna Documentation: https://optuna.readthedocs.io/.
 
 Optuna can be installed with pip. Python 3.7 or newer is supported.
 
