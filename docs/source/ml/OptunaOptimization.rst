@@ -3,6 +3,8 @@ Optuna Hyperparameter Optimization
 ##################################
 
 Hyperparameter Optimization with Optuna on cluster GPU Bicocca.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning.
 Documentation: https://optuna.readthedocs.io/.
 
