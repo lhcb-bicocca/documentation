@@ -15,6 +15,7 @@ Optuna can be installed with pip. Python 3.7 or newer is supported.
 Optuna Dashboard is a real-time web dashboard for Optuna. You can check the optimization history, hyperparameter importances, etc. in graphs and tables.
 
 .. code-block:: console
+ 
  pip install optuna-dashboard
 
 
