@@ -17,7 +17,7 @@ service tasks and anything that could make our learning curve faster.
    software
    server
    shifts/index
-   ml
+   ml/index
    quantum
    cern
    tutorials/index
