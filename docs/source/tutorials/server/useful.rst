@@ -1,6 +1,25 @@
 Useful Suggestions
 ==================
 
+Jupyter Notebooks
+-----------------
+It is possible to forward the jupyter notebook to the personal computer and avoid the X11 server to gain speed and fluidity of execution.
+This is possible by activating a port forwarding from your personal computer to brownie using ssh
+
+.. code-block:: bash
+
+  $ ssh -L 8080:localhost:1234 <username>@brownie.mib.infn.it
+
+
+On brownie you should then open the jupyter notebook session without the opening of the browser
+
+.. code-block:: bash
+  
+  $ jupyter notebook --no-browser --port=1234
+  
+The jupyter notebook can now be accessed from your personal computer's browser at this address: `http://localhost:8080 <http://localhost:8080>`_.
+Please note that a token will be requested to access the notebook. It can be found in the output of the ``jupyter notebook`` command run on the server.
+
 Screen
 ------
 Screen is a command that creates a new terminal session and keeps it open even when the user logs out.
