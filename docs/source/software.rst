@@ -24,3 +24,4 @@ There are many useful software community-developed. A few suggestions below:
  - `LHCb Starterkit Second Analysis Steps <https://lhcb.github.io/starterkit-lessons/second-analysis-steps/README.html>`_
  - `Scikit-HEP <https://github.com/scikit-hep>`_
  - `A Common Tracking Software <https://acts.readthedocs.io/en/latest/index.html>`_
+ - `Tree <https://tree.nathanfriend.io>`_ to print folder tree in markdown
