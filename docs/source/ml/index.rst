@@ -10,3 +10,11 @@ Books
 ^^^^^
  - `Probabilistic Machine Learning <https://probml.github.io/pml-book/>`_
  - `Deep Learning Book <https://www.deeplearningbook.org>`_
+
+ml-helpers
+^^^^^^^^^^
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   OptunaOptimization.rst
