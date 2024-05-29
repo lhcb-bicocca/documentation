@@ -43,45 +43,32 @@ Available services include:
 
 - cvmfs
 - eos
-- afs
-- cuda12.0
-- gcc11.2.1
-- ROOT v6.26/10
+- cuda12.5
+- gcc11.4.1
 - docker
 
 For any further request, please contact **brownie-admins@lists.mib.infn.it**.
  
-Please note that to access your *afs* and *eos* area, you should first create your afs token by ``kinit`` and connect it to the *eos* service.
-We wrote a script to allow this in one shot
+Please note that to access your *eos* area, you should first create your afs token by ``kinit``:
 
 .. code-block:: console
 
-  $ initialise_afs_and_eos.sh <cern_user_name>
+  $ kinit <cern_user_name>@CERN.CH
 
-By default the system is built on ``gcc4.8.5``. If you want to compile your programs in ``gcc11``, simply run
-
-.. code-block:: console
- 
-  $ scl enable devtoolset-11 bash
-
-The CUDA libraries are not automatically available at login, to load them (and enable gcc11)
+The CUDA libraries are not automatically available at login, to load them
 
 .. code-block:: console
   
-  $ load_cuda_environment.sh
+  $ load_cuda
 
-To load ROOT into the environment
-
-.. code-block:: console
-
-  $ scl enable devtoolset-11 bash
-  $ source /usr/local/root_src/root_v62610_gcc11_py3/bin/thisroot.sh
-
-Please note that there could be some problems with ROOT `RConfig.hxx` in this install area that would make compilations of other packages depending on ROOT fail (e.g. GooFit). Therefore, unless a standalone ROOT compilation is needed, it is best to load the `LCG <https://lcginfo.cern.ch>`_ environment from cvmfs
+To use ROOT the simplest is to load an environment from cvmfs
 
 .. code-block:: console
 
-  $ source /cvmfs/sft.cern.ch/lcg/views/setupViews.sh LCG_102b x86_64-centos7-gcc11-opt
+  $ source /cvmfs/sft.cern.ch/lcg/views/setupViews.sh LCG_105b x86_64-el9-gcc13-opt
+
+be reminded of loading libraries compiled for `x86_64-el9`. 
+A complete list of libraries for each LCG version can be found at this `address <https://lcginfo.cern.ch>`_.
 
 Storage
 *******
