@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'LHCb Bicocca Docs'
-copyright = '2021-2022, Maurizio Martinelli'
+copyright = '2021-2024, Maurizio Martinelli'
 author = 'Maurizio Martinelli'
 
 
