@@ -3,7 +3,7 @@ Useful Suggestions
 
 Cernbox
 -------
-The cernbox client is not installed on the server, but the files in the cernbox can be accessed through `eos`.
+The cernbox client is not installed on the server, but the files in the cernbox can be accessed through ``eos``.
 A symbolic link can be created for convenience
 
 .. code-block:: bash
@@ -11,7 +11,7 @@ A symbolic link can be created for convenience
   $ ln -s /eos/home-<u>/<username_cern> cernbox
 
 
-where `<u>` is the initial of the CERN username `<username_cern>`.
+where ``<u>`` is the initial of the CERN username ``<username_cern>``.
 
 Jupyter Notebooks
 -----------------
