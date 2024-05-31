@@ -1,6 +1,18 @@
 Useful Suggestions
 ==================
 
+Cernbox
+-------
+The cernbox client is not installed on the server, but the files in the cernbox can be accessed through `eos`.
+A symbolic link can be created for convenience
+
+.. code-block:: bash
+
+  $ ln -s /eos/home-<u>/<username_cern> cernbox
+
+
+where `<u>` is the initial of the CERN username `<username_cern>.
+
 Jupyter Notebooks
 -----------------
 It is possible to forward the jupyter notebook to the personal computer and avoid the X11 server to gain speed and fluidity of execution.
