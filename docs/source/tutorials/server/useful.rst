@@ -11,7 +11,7 @@ A symbolic link can be created for convenience
   $ ln -s /eos/home-<u>/<username_cern> cernbox
 
 
-where `<u>` is the initial of the CERN username `<username_cern>.
+where `<u>` is the initial of the CERN username `<username_cern>`.
 
 Jupyter Notebooks
 -----------------
