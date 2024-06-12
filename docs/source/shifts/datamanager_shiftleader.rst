@@ -261,7 +261,10 @@ LHC cycle
 
 -  ``Handshake``: :math:`Injection\to Adjust\to Dump`. Done between LHC
    and all 4 experiments, controlled via Big Brother
--  LHC filling scheme, naming convention |image1|
+-  LHC filling scheme, naming convention
+
+.. image:: images/name_conv.png
+   :width: 600
 
 =========== ==========================
 LHCb States Note
@@ -915,9 +918,11 @@ State Machine (FSM). There are 4 domains:
 
 -  :math:`ERROR\to NOT\_READY \to CONFIGURING \to READY \to RUNNING`
 
-|image2|
+.. image:: images/states.png
+   :width: 600
 
-|image3|
+.. image:: images/control_units.png
+   :width: 600
 
 The Main tool of the ECS are: \* **RunControl**: Handles the DAQ &
 Dataflow, Allows to: Configure the system, Start & Stop runs \*
