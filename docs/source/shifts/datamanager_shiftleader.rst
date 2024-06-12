@@ -450,16 +450,16 @@ Officer (TSO). \* Call the subsystem piquets and tell them to monitor
 the state of the detector. \* Call Run Chief and LEXGLIMOS. \* Wait for
 the Fire Brigade.
 
-+------------------+--------------------------------------------------------------+
-| Emergency        | Actions                                                      |
-+==================+==============================================================+
-| Fire             | Call Fire and Rescue Service, set off evacuation alarm using |
-|                  | buttons on the wall, put the fire out if without taking      |
-|                  | risks, otherwise evacuate                                    |
-+------------------+--------------------------------------------------------------+
-| Medical Emergencies | Call Fire and Rescue Service, first-AID kit in control    |
-|                  | room and defibrillator outside in the corridor               |
-+------------------+--------------------------------------------------------------+
++---------------------+--------------------------------------------------------------+
+| Emergency           | Actions                                                      |
++=====================+==============================================================+
+| Fire                | Call Fire and Rescue Service, set off evacuation alarm using |
+|                     | buttons on the wall, put the fire out if without taking      |
+|                     | risks, otherwise evacuate                                    |
++---------------------+--------------------------------------------------------------+
+| Medical Emergencies | Call Fire and Rescue Service, first-AID kit in control       |
+|                     | room and defibrillator outside in the corridor               |
++---------------------+--------------------------------------------------------------+
 
 Detector Safety System (DSS)
 ----------------------------
