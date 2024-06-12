@@ -323,7 +323,7 @@ PLUME monitor the LHCb luminosity
 | :math:`\nu` (nu) | average number of pp interaction per bunch            |   |
 |                  |                                                       |   |
 +------------------+-------------------------------------------------------+---+
-| :math:mu`\ (mu)  | average number of **visible** pp interaction per      |   |
+| :math:`mu`\ (mu) | average number of **visible** pp interaction per      |   |
 |                  | bunch                                                 |   |
 +------------------+-------------------------------------------------------+---+
 | pileup           | average number of pp interaction in visible events    |   |
@@ -334,7 +334,7 @@ PLUME monitor the LHCb luminosity
 
 +--------------------------------------------------+--------------+-----------+
 | Alarm on screen                                 | LED status   | Action     |
-+==================================================+==============+===========+
++=================================================+==============+============+
 | **LHC leveling receiver not running**           | First LED is | Call       |
 |                                                 | grey and     | CCC and    |
 |                                                 | sentence red | ask        |
@@ -343,14 +343,14 @@ PLUME monitor the LHCb luminosity
 |                                                 |              | the        |
 |                                                 |              | leveling   |
 |                                                 |              | application|
-+--------------------------------------------------+--------------+-----------+
++-------------------------------------------------+--------------+------------+
 | **No response to leveling since 564 s**         | Second LED   | Call       |
 |                                                 | and sentence | CCC and    |
 |                                                 | green, first | ask        |
 |                                                 | LED grey and | them to    |
 |                                                 | sentence red | perform    |
 |                                                 |              | leveling   |
-+--------------------------------------------------+--------------+-----------+
++-------------------------------------------------+--------------+------------+
 | **X-plane optimization not done, LHCb Leveling  | First LED    | Call       |
 | master inhibited, please check!**               | and sentence | CCC and    |
 |                                                 | green, second| them to    |
@@ -359,10 +359,11 @@ PLUME monitor the LHCb luminosity
 |                                                 |              | the        |
 |                                                 |              | crossing   |
 |                                                 |              | plane      |
-+--------------------------------------------------+--------------+-----------+
++-------------------------------------------------+--------------+------------+
 
 if LHC is in Machine Development period, they screw arounf with the
 machine.
+
 .. container:: info
    - General rule, if already in MD stay in MD at each
      injection handshake until next physics fill.
@@ -435,7 +436,8 @@ Officer (RSO), Electrical Safety Officer (ESO), **Shift Leader In
 Matters Of Safety** (SLIMOS). Handling safety alarms takes precedence
 over other Shift Leader tasks.
 
-SLIMOS are expected to: 
+SLIMOS are expected to:
+
 - be knowledgeable about the safety aspects of
   the experiment 
 - handle alarms and emergency situations 
@@ -447,7 +449,8 @@ piquet (16 80 00) is your first-line contact in LHCb for all matters of
 safety and technical infrastructure. (as backup option use intercoms
 on Emergency Panel)
 
-In case of **Evacuation**: 
+In case of **Evacuation**:
+
 - Control Room assembly point outside the SY8 building 
 - Take the shift leader mobile phone and the list of
   contacts with you. 
@@ -476,10 +479,10 @@ The purpose is to detect abnormal and potentially harmful situations and
 minimise damage to the experiment’s equipment by taking automated
 protective actions.
 
--  Front-end: (safety-critical part) is a redundant PLC system. It runs
+- Front-end: (safety-critical part) is a redundant PLC system. It runs
    autonomously and takes automated protective hardware actions based on
    a predefined alarm-action matrix
--  Back-end: supervises the front-end and serves as an interface to the
+- Back-end: supervises the front-end and serves as an interface to the
    PLC
 
 SLIMOS check to be logged into DSS as ``slimos`` and two LEDs next to
@@ -494,7 +497,8 @@ triggered
 
 DSS has a dedicated set of sensors connected to the DSS I/O modules. The
 inputs can be general or specific to a subdetector. There are three
-types of inputs: 
+types of inputs:
+
 - Digital inputs (prefix "DI") are dry contacts that
  are normally closed (state "False"). Examples include signals from
 cooling plant PLCs or from the smoke detection system.
@@ -506,7 +510,8 @@ nominal status. Sensors with an "abnormal state" appear in the upper
 table on the DSS user interface. Alarms need to be acknowledged. They
 can only be reset ("removed") once the corresponding inputs are no
 longer active. They start with the prefix "AL\_" and are colour-coded in
-red. 
+red.
+
 - "!!!" and flashing text indicate that the alarm has not yet been
   acknowledged.
 - The "x" indicates that the alarm has been acknowledged.
@@ -529,6 +534,7 @@ Handling Alarms - Istructions
 
 DSS alarms are associated with an audible alarm (siren) and a strobe
 light on the emergency panel.
+
 1. Stop the siren with the green button "Stop buzzer" on the emergency
    panel or by clicking "Stop siren" on the DSS user interface.
 2. Identify the cause on DSS user interface, give
@@ -546,7 +552,8 @@ light on the emergency panel.
 **Electrical actions**: The following instructions apply during normal
 operation when there is no activity in the cavern (UX85A and UX85B). If
 there are activities in the cavern (or if you are not sure) call the DSS
-piquet (16 80 00). 
+piquet (16 80 00).
+
 - When you have green light from the Run Chief and
   the relevant piquets to resume operation, reset the DSS action
   (electrical actions start with EA\_) on the DSS panel. 
@@ -757,7 +764,8 @@ In case of a pre-alarm 2 or an alarm, DSS cuts the power to the affected detecto
 User interface
 ~~~~~~~~~~~~~~
 
-The SNIFFER application has four main views. 
+The SNIFFER application has four main views:
+
 - SYNOPTIQUE GENERAL shows a top view of the LHCb detector with the
   locations of the SNIFFER lines. Green: no alarm or pre-alarm,
   Orange: pre-alarm, Red: alarm, Blue: communication problem between
@@ -800,11 +808,13 @@ The access to the LHCb cavern is controlled by two access points which
 are part of the LHC access control system (LACS). Each access point is
 composed of a PAD (Personnel Access Device) and MAD (Material Access
 Device).
+
 - **PZ85** is the non-interlocked access point on the surface.
 - **UX85** is the interlocked access point underground, controlling the
 access to the detector side of the cavern (UX85B).
 
 PZ85 has two access modes, GENERAL and CLOSED. 
+
 - The access mode can be changed from the access control terminal in
   the LHCb control room. In GENERAL mode, everybody who is authorized can enter. 
 - To change the mode of the PZ85 access point, click on the box "PZ85"
@@ -812,6 +822,7 @@ PZ85 has two access modes, GENERAL and CLOSED.
 
 The UX85 access point is normally managed by the CCC (In restricted
 mode, the CCC can delegate the access point to the LHCb control room) 
+
 - During short accesses, UX85 is normally in RESTRICTED or RESTRICTED
 AUTOMATIC mode. 
 - In RESTRICTED and RESTRICTED AUTOMATIC mode,
@@ -828,6 +839,7 @@ authorizations on `ADaMS <https://adams.web.cern.ch/>`__.
 
 The default view of the LACS website shows the number of people in each
 zone, and their name. 
+
 - If the page is not updating, close and re-open
 the browser (shortcut "LACS IHM Web" on the desktop). Select "Kerberos"
 to authenticate
@@ -933,6 +945,7 @@ Cooling and electricity
 
 The two LEDs in the bottom left corner of the emergency panel show the
 status of the two 18 kV/400 V transformers in the UX85 cavern 
+
 - Cooling and electricity panels are meant to help diagnose the situation in case
   of a problem/alarm. (Red boxes/LEDs on the panels don’t necessarily mean
   a problem) 
@@ -982,6 +995,7 @@ State Machine (FSM). There are 4 domains:
    :width: 600
 
 The Main tool of the ECS are: 
+
 - **RunControl**: Handles the DAQ & Dataflow, Allows to:
   Configure the system, Start & Stop runs 
 - **AutoPilot**: Knows how to start and keep a run going from any state.
@@ -1002,6 +1016,7 @@ applied by all sub-systems on Configure. The Activity contains the
 global run settings
 
 **CONFIGURATION STEPS (before starting a Run)**
+
 1. Select the
 Sub-Systems & Sub-Detectors Included (normally ALL for Physics)
 2. Choose/check the "Activity" (Will be communicated)
@@ -1102,6 +1117,7 @@ Alarm Screen
 
 Launch it with
 ``/group/online/ecs/Shortcuts319/LHCb/LBECSINFO/AlarmScreen.sh`` 
+
 - at startup click on "Load filter…" on top right and select
   "ExcludeBadSystems" 
 - normally this screen is empty: every alarm should be followed up by
