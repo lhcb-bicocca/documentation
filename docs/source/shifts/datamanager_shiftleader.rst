@@ -457,8 +457,8 @@ the Fire Brigade.
 |                  | buttons on the wall, put the fire out if without taking      |
 |                  | risks, otherwise evacuate                                    |
 +------------------+--------------------------------------------------------------+
-| Medical Emergencies | Call Fire and Rescue Service, first-AID kit in control room  |
-|                  | and defibrillator outside in the corridor                    |
+| Medical Emergencies | Call Fire and Rescue Service, first-AID kit in control    |
+|                  | room and defibrillator outside in the corridor               |
 +------------------+--------------------------------------------------------------+
 
 Detector Safety System (DSS)
