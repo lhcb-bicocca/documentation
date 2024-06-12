@@ -312,23 +312,23 @@ LHCb Luminosity
 
 PLUME monitor the LHCb luminosity
 
-+-----------+-------------------------------------------------------+---+
-| Dictionary| Definition                                            | N |
-|           |                                                       | o |
-|           |                                                       | t |
-|           |                                                       | e |
-+===========+=======================================================+===+
-| :math:`\  | average number of pp interaction per bunch            |   |
-| nu`\ (nu) |                                                       |   |
-+-----------+-------------------------------------------------------+---+
-| :math:`\  | average number of **visible** pp interaction per      |   |
-| mu`\ (mu) | bunch                                                 |   |
-+-----------+-------------------------------------------------------+---+
-| pileup    | average number of pp interaction in visible events    |   |
-+-----------+-------------------------------------------------------+---+
-| cros      | probability of how manu pp collisions per unit time   |   |
-| s-section | and lumi                                              |   |
-+-----------+-------------------------------------------------------+---+
++------------------+-------------------------------------------------------+---+
+| Dictionary       | Definition                                            | N |
+|                  |                                                       | o |
+|                  |                                                       | t |
+|                  |                                                       | e |
++==================+=======================================================+===+
+| :math:`\nu` (nu) | average number of pp interaction per bunch            |   |
+|                  |                                                       |   |
++------------------+-------------------------------------------------------+---+
+| :math:mu`\ (mu)  | average number of **visible** pp interaction per      |   |
+|                  | bunch                                                 |   |
++------------------+-------------------------------------------------------+---+
+| pileup           | average number of pp interaction in visible events    |   |
++------------------+-------------------------------------------------------+---+
+| cros             | probability of how manu pp collisions per unit time   |   |
+| s-section        | and lumi                                              |   |
++------------------+-------------------------------------------------------+---+
 
 +--------------------------------------------------+--------------+---------+
 | Alarm on screen                                 | LED status   | Action  |
@@ -450,20 +450,16 @@ Officer (TSO). \* Call the subsystem piquets and tell them to monitor
 the state of the detector. \* Call Run Chief and LEXGLIMOS. \* Wait for
 the Fire Brigade.
 
-+-------+--------------------------------------------------------------+
-| Emer  | Actions                                                      |
-| gency |                                                              |
-+=======+==============================================================+
-| Fire  | Call Fire and Rescue Service, set off evacuation alarm using |
-|       | buttons on the wall, put the fire out if without taking      |
-|       | risks, otherwise evacuate                                    |
-+-------+--------------------------------------------------------------+
-| Me    | Call Fire and Rescue Service, first-AID kit in control room  |
-| dical | and defibrillator outside in the corridor                    |
-| E     |                                                              |
-| merge |                                                              |
-| ncies |                                                              |
-+-------+--------------------------------------------------------------+
++------------------+--------------------------------------------------------------+
+| Emergency        | Actions                                                      |
++==================+==============================================================+
+| Fire             | Call Fire and Rescue Service, set off evacuation alarm using |
+|                  | buttons on the wall, put the fire out if without taking      |
+|                  | risks, otherwise evacuate                                    |
++------------------+--------------------------------------------------------------+
+| Medical Emergencies | Call Fire and Rescue Service, first-AID kit in control room  |
+|                  | and defibrillator outside in the corridor                    |
++------------------+--------------------------------------------------------------+
 
 Detector Safety System (DSS)
 ----------------------------
@@ -917,17 +913,17 @@ Cooling and electricity
 The two LEDs in the bottom left corner of the emergency panel show the
 status of the two 18 kV/400 V transformers in the UX85 cavern 
 - Cooling and electricity panels are meant to help diagnose the situation in case
-of a problem/alarm. (Red boxes/LEDs on the panels don’t necessarily mean
-a problem) 
+  of a problem/alarm. (Red boxes/LEDs on the panels don’t necessarily mean
+  a problem) 
 - The cooling panel (to the left of the magnet panel) shows 
-the status of the detector cooling plants, environmental parameters
-(temperature, dew point) in the cavern, and temperature and flow rate
-measurements of the water cooling circuits. 
+  the status of the detector cooling plants, environmental parameters
+  (temperature, dew point) in the cavern, and temperature and flow rate
+  measurements of the water cooling circuits. 
 - The electricity panel 
-shows the status of the main electrical switchboards relevant for LHCb.
+  shows the status of the main electrical switchboards relevant for LHCb.
 - The "CCM" terminal on the very left allows one to launch SCADA 
-applications on the Technical Network (but is for expert only, no need
-to react to alarm on this screen).
+  applications on the Technical Network (but is for expert only, no need
+  to react to alarm on this screen).
 
 Module 2b: Run Control & BigBrother
 ===================================
