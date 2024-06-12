@@ -184,7 +184,7 @@ Shifter Duties
 Data Manager Duties
 -------------------
 
--  ☐ check the plots in the “Shift” folder continuously. ## SLIMOS
+-  ☐ check the plots in the "Shift" folder continuously. ## SLIMOS
    Duties
 -  ☐ Follow up DSS alarms, acknowledge and reset.
 
@@ -192,7 +192,7 @@ Daily ToDo
 ----------
 
 -  ☐ if night shifter print ``Who's on shift today`` @ 6am (select
-   printer “color”, printer near keys’ cabinet)
+   printer "color", printer near keys’ cabinet)
 -  ☐ SL at the end should write a ``Shift Summary`` entry in the
    logbook: what happened in the LHC/LHCb and outstanding items to be
    done using proposed structure
@@ -232,7 +232,7 @@ while ``LHCB_U`` is strongly recomended for SL.
 Who you gonna call?
 -------------------
 
-.. math::  try ~piquet \times 3 \rightarrow try~Run~Chief \rightarrow Run~Coordinator
+.. math::  try ~piquet x3 => try~Run~Chief => Run~Coordinator
 
 \* If you know you cannot make it on time, call the current Shift Leader
 and call the Run Chief \* If the incoming shifter does not show up
@@ -259,7 +259,7 @@ LHCb Run Control
 LHC cycle
 ---------
 
--  ``Handshake``: :math:`Injection\to Adjust\to Dump`. Done between LHC
+-  ``Handshake``: :math:`Injection-> Adjust-> Dump`. Done between LHC
    and all 4 experiments, controlled via Big Brother
 -  LHC filling scheme, naming convention
 
@@ -299,11 +299,11 @@ LHCb safety
 ~~~~~~~~~~~
 
 -  LHCb Main Background Monitor rearms automatically if dump was not by
-   itself :math:`\to` FSM state changes ABORT_PMT :math:`\to` PM_READY
-   :math:`\to` READY
+   itself :math:`->` FSM state changes ABORT_PMT :math:`->` PM_READY
+   :math:`->` READY
 -  if BCM dumps, and FSM stays in PM_READY waiting for manual Rearm
-   :math:`\to` CALL CCC “we have probably dumped and we are
-   investigating”, and CALL RC before rearming -use the
+   :math:`->` CALL CCC "we have probably dumped and we are
+   investigating", and CALL RC before rearming -use the
    ``Send to logbook`` button to record unusual activity in the
    Monitoring beam-induced background
 
@@ -375,13 +375,16 @@ Crucial for the running of LHCb: data with malfunctionning detector will
 most certainly be discarded for offline analysis.
 
 Monitoring Control Unit controls the running of the monitoring tasks in
-the monitoring farm :math:`\to` It must be ``RUNNING`` always when we
+the monitoring farm :math:`->` It must be ``RUNNING`` always when we
 take data
 
-Data Sources: - Detector raw data - Reconstructed quantities: output of
-HLT or of reconstruction monitoring jobs - Environmental quantities, as
-a function of time: produced by electronics, HV, … - And automatic
-analyses of these sources
+Data Sources:
+- Detector raw data
+- Reconstructed quantities: output of HLT or of reconstruction
+monitoring jobs
+- Environmental quantities, as a function of time: produced by
+electronics, HV, ...
+- And automatic analyses of these sources
 
 MONET
 -----
@@ -487,24 +490,24 @@ triggered
 
 DSS has a dedicated set of sensors connected to the DSS I/O modules. The
 inputs can be general or specific to a subdetector. There are three
-types of inputs: \* Digital inputs (prefix “DI”) are dry contacts that
-are normally closed (state “False”). Examples include signals from
+types of inputs: \* Digital inputs (prefix "DI") are dry contacts that
+are normally closed (state "False"). Examples include signals from
 cooling plant PLCs or from the smoke detection system. \* 4 – 20 mA or 0
-– 10 V analogue inputs (prefix “AI”). \* PT100 temperature probes
-(prefix “PT”).
+– 10 V analogue inputs (prefix "AI"). \* PT100 temperature probes
+(prefix "PT").
 
 Inputs disappear automatically once the sensor has returned to its
-nominal status. Sensors with an “abnormal state” appear in the upper
+nominal status. Sensors with an "abnormal state" appear in the upper
 table on the DSS user interface. Alarms need to be acknowledged. They
-can only be reset (“removed”) once the corresponding inputs are no
-longer active. They start with the prefix “AL\_” and are colour-coded in
-red. \* “!!!” and flashing text indicate that the alarm has not yet been
-acknowledged. \* The “x” indicates that the alarm has been acknowledged.
+can only be reset ("removed") once the corresponding inputs are no
+longer active. They start with the prefix "AL\_" and are colour-coded in
+red. \* "!!!" and flashing text indicate that the alarm has not yet been
+acknowledged. \* The "x" indicates that the alarm has been acknowledged.
 \* ``Left-click`` to acknowledge \* ``Right-click`` to show info and
 instructions and actions
 
-Actions are usually “brute force”, but can be delayed with respect to
-the appearance of an alarm to give time for a “soft landing”. Resetting
+Actions are usually "brute force", but can be delayed with respect to
+the appearance of an alarm to give time for a "soft landing". Resetting
 actions should be coordinated with the DSS piquet, Run chief and
 subsystem piquets.
 
@@ -519,7 +522,7 @@ Handling Alarms - Istructions
 
 DSS alarms are associated with an audible alarm (siren) and a strobe
 light on the emergency panel. 1. Stop the siren with the green button
-“Stop buzzer” on the emergency panel or by clicking “Stop siren” on the
+"Stop buzzer" on the emergency panel or by clicking "Stop siren" on the
 DSS user interface. 2. Identify the cause on DSS user interface, give
 precedence to ``Level-3 alarms``. 3. Acknowledge the alarm clicking on
 it 4. If the action ``CCC_Alarm_signal_sent`` was triggered, call CCC TI
@@ -539,8 +542,8 @@ the relevant piquets to resume operation, reset the DSS action
 in the D1 – D3 barracks or the UXA-B1 zone (Maratons): \* Open the
 control panel for the Hazemeyer TDM low-voltage switchboards:
 ``/group/online/ecs/Shortcuts316/INF/INFDAI1/INFDAI1_UI_lbRackTDMStatus.sh``
-\* Click on “Rearm after DSS cut” (removes the DSS interlock). \* Click
-on “Turn on”. \* If the first attempt to switch on fails, contact the
+\* Click on "Rearm after DSS cut" (removes the DSS interlock). \* Click
+on "Turn on". \* If the first attempt to switch on fails, contact the
 DSS piquet. \* Inform the subdetector piquets that they can switch their
 equipment (LV/HV supplies) on. \* For a detailed description of the
 procedure, see `EDMS document
@@ -562,14 +565,14 @@ intervention or taking manual safety actions)
 
 The default view of the CSAM (CERN Safety Alarm Monitoring) application
 shows a map of Point 8 with LEDs/circles representing the status of the
-Level-3 alarm systems in each building. Clicking on the button “Vue
-d’alarmes” on the bottom left and subsequently “Alarmes niveau 3” opens
+Level-3 alarm systems in each building. Clicking on the button "Vue
+d’alarmes" on the bottom left and subsequently "Alarmes niveau 3" opens
 a view showing a list of the currently active Level-3 alarms (anywhere
 at CERN). For a more detailed description of the CSAM user interface see
 https://lbdokuwiki.cern.ch/infrastructure:csamapplication
 
 .. container:: info 
-   Keep the CSAM screen on “Vue d’alarmes” and not “Historique”
+   Keep the CSAM screen on "Vue d’alarmes" and not "Historique"
    to not miss new events
 
 The following scenarios can trigger Level-3 alarms in the LHCb cavern or
@@ -603,8 +606,8 @@ in the LHCb surface buildings.
 | in    |                             |                               |
 | UX85B |                             |                               |
 +-------+-----------------------------+-------------------------------+
-| Som   | the LEDs “UX85 AUG Status”  |                               |
-| ebody | and “400 V Power Status” on |                               |
+| Som   | the LEDs "UX85 AUG Status"  |                               |
+| ebody | and "400 V Power Status" on |                               |
 | p     | the emergency panel become  |                               |
 | ushed | red                         |                               |
 | an    |                             |                               |
@@ -692,7 +695,7 @@ Handling Alarms - Instructions
    or FRS (if not it might be a test, call them to confirm).
 -  On the ECS alarm screen should appear an error, and a DSS alarm can
    also be triggered.
--  Keep the CSAM screen on “Vue d’alarmes” and not “Historique”
+-  Keep the CSAM screen on "Vue d’alarmes" and not "Historique"
 -  from the alarm description identify *type* and *location*
 -  If the alarm is in the UX85 cavern:
 -  set the mode of the PZ85 access point to Closed to prevent people
@@ -738,16 +741,18 @@ cuts the power to the affected detector
 User interface
 ~~~~~~~~~~~~~~
 
-The SNIFFER application has four main views. \* SYNOPTIQUE GENERAL shows
-a top view of the LHCb detector with the locations of the SNIFFER lines.
-Green: no alarm or pre-alarm, Orange: pre-alarm, Red: alarm, Blue:
-communication problem between PLC and module. \* The view LISTE DES
-ALARMES shows the currently active alarms For SLIMOS are relevant only
-“ALARMES” (Level-3 alarms) and “PRE-ALARMES” \* MESURES ANALOGIQUES
-shows a table with the analogue measurements of each module To create a
-plot, enter the module number in the text field next to the label
-“SSMOD-00”, press “Enter” on the keyboard, and click on the button
-“GRAPHIQUE”.
+The SNIFFER application has four main views. 
+- SYNOPTIQUE GENERAL shows a top view of the LHCb detector with the
+  locations of the SNIFFER lines. Green: no alarm or pre-alarm,
+  Orange: pre-alarm, Red: alarm, Blue: communication problem between
+  PLC and module. 
+- The view LISTE DES ALARMES shows the currently active alarms
+  For SLIMOS are relevant only "ALARMES" (Level-3 alarms) and
+  "PRE-ALARMES" 
+- MESURES ANALOGIQUES shows a table with the analogue measurements
+  of each module To create a plot, enter the module number in the
+  text field next to the label "SSMOD-00", press "Enter" on the
+  keyboard, and click on the button "GRAPHIQUE".
 
 .. _handling-alarms---instructions-1:
 
@@ -782,19 +787,21 @@ Device). \* **PZ85** is the non-interlocked access point on the surface.
 \* **UX85** is the interlocked access point underground, controlling the
 access to the detector side of the cavern (UX85B).
 
-PZ85 has two access modes, GENERAL and CLOSED. \* The access mode can be
-changed from the access control terminal in the LHCb control room. In
-GENERAL mode, everybody who is authorized can enter. \* To change the
-mode of the PZ85 access point, click on the box “PZ85” on the access
-control user interface (click on the red box “Closed”).
+PZ85 has two access modes, GENERAL and CLOSED. 
+- The access mode can be changed from the access control terminal in
+  the LHCb control room. In GENERAL mode, everybody who is authorized can enter. 
+- To change the mode of the PZ85 access point, click on the box "PZ85"
+  on the access control user interface (click on the red box "Closed").
 
 The UX85 access point is normally managed by the CCC (In restricted
-mode, the CCC can delegate the access point to the LHCb control room) \*
-During short accesses, UX85 is normally in RESTRICTED or RESTRICTED
-AUTOMATIC mode. \* In RESTRICTED and RESTRICTED AUTOMATIC mode,
+mode, the CCC can delegate the access point to the LHCb control room) 
+- During short accesses, UX85 is normally in RESTRICTED or RESTRICTED
+AUTOMATIC mode. 
+- In RESTRICTED and RESTRICTED AUTOMATIC mode,
 everybody who enters the zone must take a safety token (key) which is
 distributed from the panel next to the PAD. The zone can only be closed
-if all keys have been returned. \* During beam operation, the access
+if all keys have been returned. 
+- During beam operation, the access
 point is closed and interlocked (VETO).
 
 As Shift Leader, you are automatically included in an IMPACT request for
@@ -803,19 +810,20 @@ requirements for accessing the cavern. You can check your access
 authorizations on `ADaMS <https://adams.web.cern.ch/>`__.
 
 The default view of the LACS website shows the number of people in each
-zone, and their name. \* If the page is not updating, close and re-open
-the browser (shortcut “LACS IHM Web” on the desktop). Select “Kerberos”
+zone, and their name. 
+- If the page is not updating, close and re-open
+the browser (shortcut "LACS IHM Web" on the desktop). Select "Kerberos"
 to authenticate
 
 Radiation Monitors
 ~~~~~~~~~~~~~~~~~~
 
 The REMUS panel shows the equivalent dose rate measured by monitors
-located in the LHCb cavern and the adjacent tunnel regions. • If you see
-an alarm (yellow or red) from one of the monitors in UX85A (protected
-side of the cavern), set the mode of the PZ85 access point to CLOSED,
-call the LHCb RPE piquet (16 80 00) and the CERN HSE-RP piquet (7 52
-52).
+located in the LHCb cavern and the adjacent tunnel regions.
+ If you see an alarm (yellow or red) from one of the monitors in UX85A
+ (protectedside of the cavern), set the mode of the PZ85 access point
+ to CLOSED, call the LHCb RPE piquet (16 80 00) and the CERN HSE-RP
+ piquet (7 52 52).
 
 Opening the cavern after beam operation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -826,7 +834,7 @@ Opening the cavern after beam operation
 -  Call the CCC (7 76 00) to inform them that we would like to access
    the UX85B cavern and ask them to lift the safety veto.
 -  When the safety veto is lifted, the state shown on the LASS view
-   changes from “VETO SAFETY” to “VETO”.
+   changes from "VETO SAFETY" to "VETO".
 -  Wait for the RPE piquet to come to the control room. Make sure the
    REMUS panel is up and running.
 -  The RPE piquet goes to the cavern to lift the radiation veto (you
@@ -834,12 +842,12 @@ Opening the cavern after beam operation
 -  Once all vetoes have been lifted, call the CCC (7 76 00) from the
    phone next to the access control terminal and ask them to set the
    UX85 access point to RESTRICTED mode and to delegate it to you.
--  Click “Accept” when the popup window “Do you accept delegation?“
+-  Click "Accept" when the popup window "Do you accept delegation?"
    appears in the access control application.
--  Click on the box “UX85” on the access control application to “attach”
+-  Click on the box "UX85" on the access control application to "attach"
    the UX85 access point.
 -  When the RPE piquet badges, their name appears on the access control
-   application. Click “Give Key” so that they can enter the cavern for
+   application. Click "Give Key" so that they can enter the cavern for
    the RP survey. Do not give access to anybody else than the RPE
    piquet(s) while the RP survey is in progress.
 -  Once the RPE piquet has finished the survey and gives you the OK, set
@@ -848,8 +856,8 @@ Opening the cavern after beam operation
 -  If the UX85 access point is in RESTRICTED or RESTRICTED AUTOMATIC
    mode, make sure that all keys are present and call the CCC to set the
    mode to CLOSED.
--  To check how many keys are taken and by whom, click on the tab “KEYS
-   TAKEN” on the LACS which is normally open on the screen next to the
+-  To check how many keys are taken and by whom, click on the tab "KEYS
+   TAKEN" on the LACS which is normally open on the screen next to the
    access control application.
 -  If UX85 is in GENERAL mode or if the patrol was lost, the zone needs
    to be patrolled. Call the DSS/RPE piquet (16 80 00).
@@ -860,7 +868,7 @@ Access to D4
 -  During operation, the access to the D4 zone (roof of the D3 counting
    room) is locked.
 -  The EN-CV detector cooling group may occasionally need access to D4,
-   e. g. to perform corrective interventions on the air dryers that are
+   e.g. to perform corrective interventions on the air dryers that are
    located there.
 -  The procedure that must be followed in this case is described in
    `EDMS document 2739150 <https://edms.cern.ch/document/2739150>`__.
@@ -888,16 +896,18 @@ the magnet (5850 A), the polarity, and the supply and return temperature
 of the cooling water (~50°). During Run periods, the operation of the
 LHCb dipole magnet is controlled by the CCC.
 
-• If the magnet trips, a DSS alarm is triggered: Call the Run Chief and
-inform him/her that the magnet tripped. • Before being able to ramp up
-again, an interlock in the magnet safety system needs to be reset. •
-Give the EP-DT magnet piquet 15 minutes to investigate, then call
-him/her (16 20 82). • If the magnet piquet confirms that the cause of
-the trip has been understood (and was due to an electrical power cut or
-glitch), you can give green light to the CCC to ramp the magnet back up
-(after consulting the Run Chief). • If the trip was caused by something
-else than a power cut/glitch or if the cause of the trip has not been
-understood, call the DSS piquet.
+- If the magnet trips, a DSS alarm is triggered: Call the Run Chief and
+inform him/her that the magnet tripped. 
+- Before being able to ramp up again, an interlock in the magnet
+  safety system needs to be reset. 
+- Give the EP-DT magnet piquet 15 minutes to investigate, then call
+  him/her (16 20 82). 
+- If the magnet piquet confirms that the cause of the trip has been
+  understood (and was due to an electrical power cut or glitch),
+  you can give green light to the CCC to ramp the magnet back up
+  (after consulting the Run Chief). 
+- If the trip was caused by something else than a power cut/glitch
+or if the cause of the trip has not been understood, call the DSS piquet.
 
 Pushing Emergency-off button will also (indirectly) dump the beam!
 
@@ -905,15 +915,17 @@ Cooling and electricity
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The two LEDs in the bottom left corner of the emergency panel show the
-status of the two 18 kV/400 V transformers in the UX85 cavern \* Cooling
-and electricity panels are meant to help diagnose the situation in case
+status of the two 18 kV/400 V transformers in the UX85 cavern 
+- Cooling and electricity panels are meant to help diagnose the situation in case
 of a problem/alarm. (Red boxes/LEDs on the panels don’t necessarily mean
-a problem) \* The cooling panel (to the left of the magnet panel) shows
+a problem) 
+- The cooling panel (to the left of the magnet panel) shows 
 the status of the detector cooling plants, environmental parameters
 (temperature, dew point) in the cavern, and temperature and flow rate
-measurements of the water cooling circuits. \* The electricity panel
+measurements of the water cooling circuits. 
+- The electricity panel 
 shows the status of the main electrical switchboards relevant for LHCb.
-\* The “CCM” terminal on the very left allows one to launch SCADA
+- The "CCM" terminal on the very left allows one to launch SCADA 
 applications on the Technical Network (but is for expert only, no need
 to react to alarm on this screen).
 
@@ -930,21 +942,21 @@ State Machine (FSM). There are 4 domains:
 1. HV: Equipment whose operation is related to the LHC State (Ex: High
    Voltages)
 
--  :math:`ERROR\to OFF \to STANDBY1 \to STANDBY2 \to READY`
+-  :math:`ERROR-> OFF -> STANDBY1 -> STANDBY2 -> READY`
 
 2. DCS: Equipment whose operation is related to a running period (Ex:
    LV)
 
--  :math:`ERROR\to OFF \to READY`
+-  :math:`ERROR-> OFF -> READY`
 
 3. DAI: And needed as Data Acquisition Infrastructure (ex: a crate)
 
--  :math:`ERROR\to OFF \to READY`
+-  :math:`ERROR-> OFF -> READY`
 
-4. DAQ: Equipment whose operation is related to a “RUN” (Ex: RO board,
+4. DAQ: Equipment whose operation is related to a "RUN" (Ex: RO board,
    HLT task)
 
--  :math:`ERROR\to NOT\_READY \to CONFIGURING \to READY \to RUNNING`
+-  :math:`ERROR-> NOT\_READY -> CONFIGURING -> READY -> RUNNING`
 
 .. image:: images/states.png
    :width: 600
@@ -967,15 +979,17 @@ Launch main panel with:
 Activity
 ~~~~~~~~
 
-“Activity” defines the configuration settings - “recipe” - which will be
+"Activity" defines the configuration settings - "recipe" - which will be
 applied by all sub-systems on Configure. The Activity contains the
 global run settings
 
-**CONFIGURATION STEPS (before starting a Run)** 1. Select the
-Sub-Systems & Sub-Detectors Included (normally ALL for Physics) 2.
-Choose/check the “Activity” (Will be communicated) 3. Check the “Trigger
-Config” (Will be communicated) 4. Check Data Destin./Type (“Automatic”
-for Physics) 5. Switch_ON AutoPilot 6. Look at “Messages”
+**CONFIGURATION STEPS (before starting a Run)**
+1. Select the
+Sub-Systems & Sub-Detectors Included (normally ALL for Physics)
+2. Choose/check the "Activity" (Will be communicated)
+3. Check the "Trigger Config" (Will be communicated)
+4. Check Data Destin./Type ("Automatic" for Physics)
+5. Switch_ON AutoPilot 6. Look at "Messages"
 
 Some Tips: Configuring & Starting a RUN
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -983,23 +997,23 @@ Some Tips: Configuring & Starting a RUN
 -  A When a new Activity is applied: Most Sub-systems and Sub-detectors
    get Reset. If needed also Deallocated (when different resources
    needed)
--  DCS & DAI Have to be READY in order to “Configure”: DCS & DAI Don’t
+-  DCS & DAI Have to be READY in order to "Configure": DCS & DAI Don’t
    accept commands from top-level, Go inside: Can send Switch_ON to
    individual Sub-Detectors (but please check with Sub-Detector piquet)
--  “Recover”, “Configure”, ”Start” should always be sent from the top,
-   but “Reset” can be sent directly to sub-detectors/sub-systems
+-  "Recover", "Configure", "Start" should always be sent from the top,
+   but "Reset" can be sent directly to sub-detectors/sub-systems
 -  Monitoring can take long to Configure: Be patient… and in extreme
-   cases, could be “Ignored” then “Included” at run-time (but don’t
+   cases, could be "Ignored" then "Included" at run-time (but don’t
    forget to include as soon as possible)
 -  **While RUNNING**:
 -  ``Monitoring`` can be manipulated while running (careful while
    closing VELO, ``Monitoring`` is needed)
--  “Fast Run Change”: command ``CHANGE_RUN`` can fix DAQ problems
-   (equivalent to :math:`Stop_Trigger\to Switch\_ON~Autopilot`)
--  “Pause/Continue”: command ``PAUSE_CONTINUE_RUN`` (can fix DAQ
+-  "Fast Run Change": command ``CHANGE_RUN`` can fix DAQ problems
+   (equivalent to :math:`Stop_Trigger-> Switch\_ON~Autopilot`)
+-  "Pause/Continue": command ``PAUSE_CONTINUE_RUN`` (can fix DAQ
    problems without changing *Run Number*)
 -  To Reset a Sub-Detector no need to ``Stop_RUN``:
-   :math:`Stop\_Trigger \to Reset SD \to Switch\_ON Autopilot`
+   :math:`Stop\_Trigger -> Reset SD -> Switch\_ON Autopilot`
 -  When changing operation mode or Cnfiguration **always STOP_RUN**
    first
 -  When Excluding a SUb-detector for local work use
@@ -1026,7 +1040,7 @@ Troubleshooting & Recovery
 | ~5 minutes) |                                                        |
 +-------------+--------------------------------------------------------+
 | When a      | look at the Message box, might give hints. Issue       |
-| Sub-System  | “Recover” from the top first, Try a few times          |
+| Sub-System  | "Recover" from the top first, Try a few times          |
 | is in       | ``Recover``/[Reset(sub-system)/]\ ``Re-Configure``     |
 | ``ERROR``   | before giving up and calling the piquet                |
 +-------------+--------------------------------------------------------+
@@ -1058,7 +1072,7 @@ Tips & Troubleshooting
 
 -  Several mechanisms rely on the LHC State: Always make sure you
    confirm from the big box!
--  Handshake goes to “Problem” after 5 mins (warns after 3): Don’t
+-  Handshake goes to "Problem" after 5 mins (warns after 3): Don’t
    panic, but react quickly
 -  **Slow prepare**: Once the subsystem is ready PROBLEM switches to
    READY automatically
@@ -1071,7 +1085,7 @@ Alarm Screen
 
 Launch it with
 ``/group/online/ecs/Shortcuts319/LHCb/LBECSINFO/AlarmScreen.sh`` \* at
-startup click on “Load filter…” on top right and select
-“ExcludeBadSystems” \* normally this screen is empty: every alarm should
+startup click on "Load filter…" on top right and select
+"ExcludeBadSystems" \* normally this screen is empty: every alarm should
 be followed up by calling the appropriate piquet (and send it to the
 logbook with the button)
