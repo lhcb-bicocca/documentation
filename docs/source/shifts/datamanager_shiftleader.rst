@@ -32,13 +32,11 @@ Acronyms
 --------
 
 +------+-----------------------------------------+---------------------+
-| Acr  | Definition                              | Note                |
-| onym |                                         |                     |
+|      | Definition                              | Note                |
 +======+=========================================+=====================+
 | AI   | Analog Inputs                           |                     |
 +------+-----------------------------------------+---------------------+
-| B    | machine operations                      |                     |
-| E_OP |                                         |                     |
+| BE_OP| machine operations                      |                     |
 +------+-----------------------------------------+---------------------+
 | BPIM | Beam Phase and Intensity Monitor        |                     |
 +------+-----------------------------------------+---------------------+
@@ -66,8 +64,7 @@ Acronyms
 | EIC  | Engineers-In-Charge                     | accelerator         |
 |      |                                         | operations          |
 +------+-----------------------------------------+---------------------+
-| E    | CERN cooling group                      |                     |
-| N-CV |                                         |                     |
+| EN-CV| CERN cooling group                      |                     |
 +------+-----------------------------------------+---------------------+
 | E    | CERN electrical service                 |                     |
 | N-EL |                                         |                     |
@@ -94,7 +91,7 @@ Acronyms
 +------+-----------------------------------------+---------------------+
 | LPC  | LHC PRogram Coordinator                 |                     |
 +------+-----------------------------------------+---------------------+
-| MAd  | Material Access Device                  |                     |
+| MAD  | Material Access Device                  |                     |
 +------+-----------------------------------------+---------------------+
 | MC   | Machine Coordinators                    | Run Chief at CCC    |
 +------+-----------------------------------------+---------------------+
@@ -226,23 +223,28 @@ while ``LHCB_U`` is strongly recomended for SL.
 
 .. container:: info
 
-   Login for control room screens: \* user: lhcb_shift \* pswd: top of
-   whiteboard, with ! in front…
+   Login for control room screens:
+   - user: lhcb_shift
+   - pswd: top of whiteboard, with ! in front…
 
 Who you gonna call?
 -------------------
 
 .. math::  try ~piquet x3 => try~Run~Chief => Run~Coordinator
 
-\* If you know you cannot make it on time, call the current Shift Leader
-and call the Run Chief \* If the incoming shifter does not show up
-within 15 minutes after the start time of the shift, the outgoing
-shifter should call the Run Chief \* The experts are also available to
-answer the phones, but first you should always call the sub-detector
-piquet of the concerned system \* If the call concerns the LHC or
-something that needs more escalating, call the Run Chief as well \* If
-there is a safety issue or an alarm, call 168000 (DSS piquet or GLIMOS)
-\* If in doubt about the LHC doings, call the CCC to clarify
+
+- If you know you cannot make it on time, call the current Shift Leader
+  and call the Run Chief 
+- If the incoming shifter does not show up
+  within 15 minutes after the start time of the shift, the outgoing
+  shifter should call the Run Chief 
+- The experts are also available to
+  answer the phones, but first you should always call the sub-detector
+  piquet of the concerned system 
+- If the call concerns the LHC or
+  something that needs more escalating, call the Run Chief as well 
+- If there is a safety issue or an alarm, call 168000 (DSS piquet or GLIMOS)
+- If in doubt about the LHC doings, call the CCC to clarify
 
 LHCb Run Control
 ----------------
@@ -330,34 +332,34 @@ PLUME monitor the LHCb luminosity
 | s-section        | and lumi                                              |   |
 +------------------+-------------------------------------------------------+---+
 
-+--------------------------------------------------+--------------+---------+
-| Alarm on screen                                 | LED status   | Action  |
-+==================================================+==============+=========+
-| **LHC leveling receiver not running**           | First LED is | Call    |
-|                                                 | grey and     | CCC and |
-|                                                 | sentence red | ask     |
-|                                                 |              | them to |
-|                                                 |              | enable  |
-|                                                 |              | the     |
-|                                                 |              | leveling|
++--------------------------------------------------+--------------+-----------+
+| Alarm on screen                                 | LED status   | Action     |
++==================================================+==============+===========+
+| **LHC leveling receiver not running**           | First LED is | Call       |
+|                                                 | grey and     | CCC and    |
+|                                                 | sentence red | ask        |
+|                                                 |              | them to    |
+|                                                 |              | enable     |
+|                                                 |              | the        |
+|                                                 |              | leveling   |
 |                                                 |              | application|
-+--------------------------------------------------+--------------+---------+
-| **No response to leveling since 564 s**         | Second LED   | Call    |
-|                                                 | and sentence | CCC and |
-|                                                 | green, first | ask     |
-|                                                 | LED grey and | them to |
-|                                                 | sentence red | perform |
-|                                                 |              | leveling|
-+--------------------------------------------------+--------------+---------+
-| **X-plane optimization not done, LHCb Leveling  | First LED    | Call    |
-| master inhibited, please check!**               | and sentence | CCC and |
-|                                                 | green, second| them to |
-|                                                 | LED grey and | optimize|
-|                                                 | sentence red | LHCb in |
-|                                                 |              | the     |
-|                                                 |              | crossing|
-|                                                 |              | plane   |
-+--------------------------------------------------+--------------+---------+
++--------------------------------------------------+--------------+-----------+
+| **No response to leveling since 564 s**         | Second LED   | Call       |
+|                                                 | and sentence | CCC and    |
+|                                                 | green, first | ask        |
+|                                                 | LED grey and | them to    |
+|                                                 | sentence red | perform    |
+|                                                 |              | leveling   |
++--------------------------------------------------+--------------+-----------+
+| **X-plane optimization not done, LHCb Leveling  | First LED    | Call       |
+| master inhibited, please check!**               | and sentence | CCC and    |
+|                                                 | green, second| them to    |
+|                                                 | LED grey and | optimize   |
+|                                                 | sentence red | LHCb in    |
+|                                                 |              | the        |
+|                                                 |              | crossing   |
+|                                                 |              | plane      |
++--------------------------------------------------+--------------+-----------+
 
 if LHC is in Machine Development period, they screw arounf with the
 machine.
@@ -433,22 +435,28 @@ Officer (RSO), Electrical Safety Officer (ESO), **Shift Leader In
 Matters Of Safety** (SLIMOS). Handling safety alarms takes precedence
 over other Shift Leader tasks.
 
-SLIMOS are expected to: \* be knowledgeable about the safety aspects of
-the experiment \* handle alarms and emergency situations \* operate
-safety systems
+SLIMOS are expected to: 
+- be knowledgeable about the safety aspects of
+  the experiment 
+- handle alarms and emergency situations 
+- operate safety systems
 
 Handling alarms usually involves contacting experts/piquets and – in
 case of Level-3 alarms – the CERN Fire and Rescue Service. The DSS/RPE
 piquet (16 80 00) is your first-line contact in LHCb for all matters of
-safety and technical infrastructure. (\*as backup option use intercoms
+safety and technical infrastructure. (as backup option use intercoms
 on Emergency Panel)
 
-In case of **Evacuation**: \* Control Room assembly point outside the
-SY8 building \* Take the shift leader mobile phone and the list of
-contacts with you. \* Follow the instructions by the Territorial Safety
-Officer (TSO). \* Call the subsystem piquets and tell them to monitor
-the state of the detector. \* Call Run Chief and LEXGLIMOS. \* Wait for
-the Fire Brigade.
+In case of **Evacuation**: 
+- Control Room assembly point outside the SY8 building 
+- Take the shift leader mobile phone and the list of
+  contacts with you. 
+- Follow the instructions by the Territorial Safety
+  Officer (TSO). 
+- Call the subsystem piquets and tell them to monitor
+  the state of the detector. 
+- Call Run Chief and LEXGLIMOS. 
+- Wait for the Fire Brigade.
 
 +---------------------+--------------------------------------------------------------+
 | Emergency           | Actions                                                      |
@@ -486,21 +494,24 @@ triggered
 
 DSS has a dedicated set of sensors connected to the DSS I/O modules. The
 inputs can be general or specific to a subdetector. There are three
-types of inputs: \* Digital inputs (prefix "DI") are dry contacts that
-are normally closed (state "False"). Examples include signals from
-cooling plant PLCs or from the smoke detection system. \* 4 – 20 mA or 0
-– 10 V analogue inputs (prefix "AI"). \* PT100 temperature probes
-(prefix "PT").
+types of inputs: 
+- Digital inputs (prefix "DI") are dry contacts that
+ are normally closed (state "False"). Examples include signals from
+cooling plant PLCs or from the smoke detection system.
+- 4 – 20 mA or 0 – 10 V analogue inputs (prefix "AI").
+- PT100 temperature probes (prefix "PT").
 
 Inputs disappear automatically once the sensor has returned to its
 nominal status. Sensors with an "abnormal state" appear in the upper
 table on the DSS user interface. Alarms need to be acknowledged. They
 can only be reset ("removed") once the corresponding inputs are no
 longer active. They start with the prefix "AL\_" and are colour-coded in
-red. \* "!!!" and flashing text indicate that the alarm has not yet been
-acknowledged. \* The "x" indicates that the alarm has been acknowledged.
-\* ``Left-click`` to acknowledge \* ``Right-click`` to show info and
-instructions and actions
+red. 
+- "!!!" and flashing text indicate that the alarm has not yet been
+  acknowledged.
+- The "x" indicates that the alarm has been acknowledged.
+- ``Left-click`` to acknowledge 
+- ``Right-click`` to show info and instructions and actions
 
 Actions are usually "brute force", but can be delayed with respect to
 the appearance of an alarm to give time for a "soft landing". Resetting
@@ -517,33 +528,40 @@ Handling Alarms - Istructions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 DSS alarms are associated with an audible alarm (siren) and a strobe
-light on the emergency panel. 1. Stop the siren with the green button
-"Stop buzzer" on the emergency panel or by clicking "Stop siren" on the
-DSS user interface. 2. Identify the cause on DSS user interface, give
-precedence to ``Level-3 alarms``. 3. Acknowledge the alarm clicking on
-it 4. If the action ``CCC_Alarm_signal_sent`` was triggered, call CCC TI
-(7 22 01) to confirm that you are aware and taking care of the alarm. 5.
-Right-click to show details info (if in doubt call DSS piquet to clarify
-what to do, or call related subsystem piquet) 6. Reset the actions once
-the problem is resolved (consulting Run Chief if needed) 7. Document the
-incident on the logbook (http://lblogbook.cern.ch/DSS and
-https://lblogbook.cern.ch/Shift/)
+light on the emergency panel.
+1. Stop the siren with the green button "Stop buzzer" on the emergency
+   panel or by clicking "Stop siren" on the DSS user interface.
+2. Identify the cause on DSS user interface, give
+   precedence to ``Level-3 alarms``.
+3. Acknowledge the alarm clicking on it
+4. If the action ``CCC_Alarm_signal_sent`` was triggered, call CCC TI
+(7 22 01) to confirm that you are aware and taking care of the alarm.
+5. Right-click to show details info (if in doubt call DSS piquet
+   to clarify what to do, or call related subsystem piquet)
+6. Reset the actions once the problem is resolved
+   (consulting Run Chief if needed)
+7. Document the incident on the logbook (http://lblogbook.cern.ch/DSS
+   and https://lblogbook.cern.ch/Shift/)
 
 **Electrical actions**: The following instructions apply during normal
 operation when there is no activity in the cavern (UX85A and UX85B). If
 there are activities in the cavern (or if you are not sure) call the DSS
-piquet (16 80 00). \* When you have green light from the Run Chief and
-the relevant piquets to resume operation, reset the DSS action
-(electrical actions start with EA\_) on the DSS panel. \* For equipment
-in the D1 – D3 barracks or the UXA-B1 zone (Maratons): \* Open the
-control panel for the Hazemeyer TDM low-voltage switchboards:
+piquet (16 80 00). 
+- When you have green light from the Run Chief and
+  the relevant piquets to resume operation, reset the DSS action
+  (electrical actions start with EA\_) on the DSS panel. 
+- For equipment in the D1 – D3 barracks or the UXA-B1 zone (Maratons): 
+- Open the control panel for the Hazemeyer TDM low-voltage switchboards:
 ``/group/online/ecs/Shortcuts316/INF/INFDAI1/INFDAI1_UI_lbRackTDMStatus.sh``
-\* Click on "Rearm after DSS cut" (removes the DSS interlock). \* Click
-on "Turn on". \* If the first attempt to switch on fails, contact the
-DSS piquet. \* Inform the subdetector piquets that they can switch their
-equipment (LV/HV supplies) on. \* For a detailed description of the
-procedure, see `EDMS document
-1054586 <https://edms.cern.ch/document/1054586>`__.
+- Click on "Rearm after DSS cut" (removes the DSS interlock). 
+- Click on "Turn on". 
+- If the first attempt to switch on fails, contact the
+  DSS piquet. 
+- Inform the subdetector piquets that they can switch their
+  equipment (LV/HV supplies) on. 
+- For a detailed description of the
+  procedure, see `EDMS document
+  1054586 <https://edms.cern.ch/document/1054586>`__.
 
 Level-3 Alarms
 --------------
@@ -727,10 +745,12 @@ complementing the general fire detection system in the cavern. It
 comprises 15 modules configured for smoke detection. There is a
 dedicated console nest to the CSAM terminal
 (https://lbdokuwiki.cern.ch/infrastructure:snifferapplication) There are
-three (pre-)alarm levels corresponding to different thresholds. \*
-Pre-alarm 1 \* Pre-alarm 2 \* Alarm (=Level-3 alarm) \* Pre-alarms need
-to be reset by the SLIMOS. \* In case of a pre-alarm 2 or an alarm, DSS
-cuts the power to the affected detector
+three (pre-)alarm levels corresponding to different thresholds. 
+- Pre-alarm 1 
+- Pre-alarm 2 
+- Alarm (=Level-3 alarm)
+Pre-alarms need to be reset by the SLIMOS.
+In case of a pre-alarm 2 or an alarm, DSS cuts the power to the affected detector
 
 .. _user-interface-1:
 
@@ -779,8 +799,9 @@ Access
 The access to the LHCb cavern is controlled by two access points which
 are part of the LHC access control system (LACS). Each access point is
 composed of a PAD (Personnel Access Device) and MAD (Material Access
-Device). \* **PZ85** is the non-interlocked access point on the surface.
-\* **UX85** is the interlocked access point underground, controlling the
+Device).
+- **PZ85** is the non-interlocked access point on the surface.
+- **UX85** is the interlocked access point underground, controlling the
 access to the detector side of the cavern (UX85B).
 
 PZ85 has two access modes, GENERAL and CLOSED. 
@@ -960,11 +981,12 @@ State Machine (FSM). There are 4 domains:
 .. image:: images/control_units.png
    :width: 600
 
-The Main tool of the ECS are: \* **RunControl**: Handles the DAQ &
-Dataflow, Allows to: Configure the system, Start & Stop runs \*
-**AutoPilot**: Knows how to start and keep a run going from any state.
-\* **BigBrother**: Based on the LHC state, it Controls SD Voltages,
-RunControl (partially) VELO Closure (not yet)
+The Main tool of the ECS are: 
+- **RunControl**: Handles the DAQ & Dataflow, Allows to:
+  Configure the system, Start & Stop runs 
+- **AutoPilot**: Knows how to start and keep a run going from any state.
+- **BigBrother**: Based on the LHC state, it Controls SD Voltages,
+ RunControl (partially) VELO Closure (not yet)
 
 Run Control
 -----------
@@ -1025,9 +1047,8 @@ Troubleshooting & Recovery
 | Recovery    |                                                        |
 +=============+========================================================+
 | No          | Try ``Change_RUN``, or Try ``Stop_RUN``/``Switch_ON``  |
-| I           | Autopilot, or Try ``Stop_RUN``/Reset                   |
-| nput/Output | RunInfo,TFC,EB+HLT1/``Switch_ON`` Autopilot            |
-| Rate        |                                                        |
+| Input/Output| Autopilot, or Try ``Stop_RUN``/Reset                   |
+| Rate        | RunInfo,TFC,EB+HLT1/``Switch_ON`` Autopilot            |
 +-------------+--------------------------------------------------------+
 | Most        | ``Stop_Run`` / [Recover /] ``Reset`` / ``Deallocate``  |
 | drastic DAQ | / ``Switch_ON`` Autopilot                              |
@@ -1080,8 +1101,9 @@ Alarm Screen
 ------------
 
 Launch it with
-``/group/online/ecs/Shortcuts319/LHCb/LBECSINFO/AlarmScreen.sh`` \* at
-startup click on "Load filter…" on top right and select
-"ExcludeBadSystems" \* normally this screen is empty: every alarm should
-be followed up by calling the appropriate piquet (and send it to the
-logbook with the button)
+``/group/online/ecs/Shortcuts319/LHCb/LBECSINFO/AlarmScreen.sh`` 
+- at startup click on "Load filter…" on top right and select
+  "ExcludeBadSystems" 
+- normally this screen is empty: every alarm should be followed up by
+  calling the appropriate piquet (and send it to the logbook
+  with the button)
