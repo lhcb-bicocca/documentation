@@ -217,7 +217,7 @@ while ``LHCB_U`` is strongly recomended for SL.
 .. warning::
 
    Never ignore DSS or Level 3 alarms: call piquet and follow procedure
-   explained in safety course (link ?)
+   explained in safety course
 
 .. danger::
 
@@ -287,10 +287,13 @@ The LHCb timing (clock) is centrally controlled/monitored via a set of
 electronics boards called RFRx, RF2TTC and BPIM. CHeck status on Big
 Brother Two modes of operations: - INTERNAL: clock is generated locally
 in LHCb for the whole detector - EXTERNAL: clock is received via the LHC
-and it is in phase with the beams (synchronous) :::warning - LHCb Clock
-must be in EXTERNAL while in data taking mode! - Phase of Beam 1 (blue)
-must stay within +/- 500ps (with some tolerance) - DeltaT (difference in
-arrival time B1/B2 @ IP) within 100ps :::
+and it is in phase with the beams (synchronous) 
+
+.. container:: info
+    - LHCb Clock must be in EXTERNAL while in data taking mode!
+    - Phase of Beam 1 (blue) must stay within +/- 500ps
+      (with some tolerance)
+    - DeltaT (difference in arrival time B1/B2 @ IP) within 100ps
 
 LHCb safety
 ~~~~~~~~~~~
@@ -310,8 +313,8 @@ LHCb Luminosity
 PLUME monitor the LHCb luminosity
 
 +-----------+-------------------------------------------------------+---+
-| D         | Definition                                            | N |
-| ictionary |                                                       | o |
+| Dictionary| Definition                                            | N |
+|           |                                                       | o |
 |           |                                                       | t |
 |           |                                                       | e |
 +===========+=======================================================+===+
@@ -327,22 +330,42 @@ PLUME monitor the LHCb luminosity
 | s-section | and lumi                                              |   |
 +-----------+-------------------------------------------------------+---+
 
-Handle alert \| Alarm on screen \| LED status \| Action \| \|
-——————————————————————————– \| ————————————————————– \|
-——————————————————— \| \| **LHC leveling receiver not running** \| First
-LED is grey and sentence red \| Call CCC and ask them to enable the
-levelling application \| \| **No response to leveling since 564 s** \|
-Second LED and sentence green, first LED grey and sentence red \| Call
-CCC and ask them to perform levelling \| \| **X-plane optimization not
-done, LHCb Leveling master inhibited, please check!** \| First LED and
-sentence green, second LED grey and sentence red \| Call CCC and them to
-optimize LHCb in the crossing plane \|
++--------------------------------------------------+--------------+---------+
+| Alarm on screen                                 | LED status   | Action  |
++==================================================+==============+=========+
+| **LHC leveling receiver not running**           | First LED is | Call    |
+|                                                 | grey and     | CCC and |
+|                                                 | sentence red | ask     |
+|                                                 |              | them to |
+|                                                 |              | enable  |
+|                                                 |              | the     |
+|                                                 |              | leveling|
+|                                                 |              | application|
++--------------------------------------------------+--------------+---------+
+| **No response to leveling since 564 s**         | Second LED   | Call    |
+|                                                 | and sentence | CCC and |
+|                                                 | green, first | ask     |
+|                                                 | LED grey and | them to |
+|                                                 | sentence red | perform |
+|                                                 |              | leveling|
++--------------------------------------------------+--------------+---------+
+| **X-plane optimization not done, LHCb Leveling  | First LED    | Call    |
+| master inhibited, please check!**               | and sentence | CCC and |
+|                                                 | green, second| them to |
+|                                                 | LED grey and | optimize|
+|                                                 | sentence red | LHCb in |
+|                                                 |              | the     |
+|                                                 |              | crossing|
+|                                                 |              | plane   |
++--------------------------------------------------+--------------+---------+
 
 if LHC is in Machine Development period, they screw arounf with the
-machine. :::info -General rule, if already in MD stay in MD at each
-injection handshake until next physics fill. -Make sure the
-sub-detectors HV are in a state that it is consistent with the LHC
-activities :::
+machine.
+.. container:: info
+   - General rule, if already in MD stay in MD at each
+     injection handshake until next physics fill.
+   - Make sure the sub-detectors HV are in a state that it is consistent 
+     with the LHC activities
 
 Module 1b: Online Monitoring
 ============================
@@ -483,10 +506,13 @@ instructions and actions
 Actions are usually “brute force”, but can be delayed with respect to
 the appearance of an alarm to give time for a “soft landing”. Resetting
 actions should be coordinated with the DSS piquet, Run chief and
-subsystem piquets. :::info A frequent action is an automated call to the
-LHCb DSS piquet (16 80 00) and hard-wired signal to CCC TI. This action
-(``CCC_Alarm_signal_sent``) can be reset without consulting piquets or
-Run Chief. :::
+subsystem piquets.
+
+.. container:: info
+   A frequent action is an automated call to the LHCb DSS piquet
+    (16 80 00) and hard-wired signal to CCC TI. This action
+   (``CCC_Alarm_signal_sent``) can be reset without consulting piquets or
+   Run Chief.
 
 Handling Alarms - Istructions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -540,9 +566,11 @@ Level-3 alarm systems in each building. Clicking on the button “Vue
 d’alarmes” on the bottom left and subsequently “Alarmes niveau 3” opens
 a view showing a list of the currently active Level-3 alarms (anywhere
 at CERN). For a more detailed description of the CSAM user interface see
-https://lbdokuwiki.cern.ch/infrastructure:csamapplication :::info Keep
-the CSAM screen on “Vue d’alarmes” and not “Historique” to not miss new
-events :::
+https://lbdokuwiki.cern.ch/infrastructure:csamapplication
+
+.. container:: info 
+   Keep the CSAM screen on “Vue d’alarmes” and not “Historique”
+   to not miss new events
 
 The following scenarios can trigger Level-3 alarms in the LHCb cavern or
 in the LHCb surface buildings.
