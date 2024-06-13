@@ -291,9 +291,9 @@ Brother.
 Two modes of operations:
 
 - INTERNAL: clock is generated locally
-in LHCb for the whole detector
+  in LHCb for the whole detector
 - EXTERNAL: clock is received via the LHC
-and it is in phase with the beams (synchronous) 
+  and it is in phase with the beams (synchronous) 
 
 .. container:: info
     - LHCb Clock must be in EXTERNAL while in data taking mode!
@@ -324,10 +324,10 @@ PLUME monitor the LHCb luminosity
 |                  |                                                       | t |
 |                  |                                                       | e |
 +==================+=======================================================+===+
-| :math:`{\nu}`    | average number of pp interaction per bunch            |   |
+| :math:`\nu`    | average number of pp interaction per bunch            |   |
 |                  |                                                       |   |
 +------------------+-------------------------------------------------------+---+
-| :math:`{\mu}`    | average number of **visible** pp interaction per      |   |
+| :math:`\mu`    | average number of **visible** pp interaction per      |   |
 |                  | bunch                                                 |   |
 +------------------+-------------------------------------------------------+---+
 | pileup           | average number of pp interaction in visible events    |   |
@@ -409,15 +409,13 @@ account (not the online one). Histograms can be looked at ``Live`` or in
    button)
 -  ``Prev`` and ``Next`` buttons can be used to browse easily the pages:
    it will open the previous or next pages in the folder structure
-
-.. container:: info
-   -  Reference histograms are histograms selected by detector experts
-      to show how the distributions are supposed to look like when
-      everything works well
-   -  if problem is spotted: click on ``Send to ELOG`` and follow
-      instructions that could be written on the MONET page itself, and
-      call the sub-detector piquet (if the problem is not solved
-      quickly)
+-  Reference histograms are histograms selected by detector experts
+   to show how the distributions are supposed to look like when
+   everything works well
+-  if problem is spotted: click on ``Send to ELOG`` and follow
+   instructions that could be written on the MONET page itself, and
+   call the sub-detector piquet (if the problem is not solved
+   quickly)
 
 A `JIRA
 site <https://its.cern.ch/jira/projects/LBRUNPROBLEMS/issues/?filter=allopenissues>`__
@@ -560,13 +558,12 @@ piquet (16 80 00).
 - When you have green light from the Run Chief and
   the relevant piquets to resume operation, reset the DSS action
   (electrical actions start with EA\_) on the DSS panel. 
-- For equipment in the D1 – D3 barracks or the UXA-B1 zone (Maratons): 
+- For equipment in the D1 - D3 barracks or the UXA-B1 zone (Maratons): 
 - Open the control panel for the Hazemeyer TDM low-voltage switchboards:
-``/group/online/ecs/Shortcuts316/INF/INFDAI1/INFDAI1_UI_lbRackTDMStatus.sh``
+  ``/group/online/ecs/Shortcuts316/INF/INFDAI1/INFDAI1_UI_lbRackTDMStatus.sh``
 - Click on "Rearm after DSS cut" (removes the DSS interlock). 
 - Click on "Turn on". 
-- If the first attempt to switch on fails, contact the
-  DSS piquet. 
+- If the first attempt to switch on fails, contact the DSS piquet.
 - Inform the subdetector piquets that they can switch their
   equipment (LV/HV supplies) on. 
 - For a detailed description of the
@@ -590,14 +587,15 @@ intervention or taking manual safety actions)
 The default view of the CSAM (CERN Safety Alarm Monitoring) application
 shows a map of Point 8 with LEDs/circles representing the status of the
 Level-3 alarm systems in each building. Clicking on the button "Vue
-d’alarmes" on the bottom left and subsequently "Alarmes niveau 3" opens
+d'alarmes" on the bottom left and subsequently "Alarmes niveau 3" opens
 a view showing a list of the currently active Level-3 alarms (anywhere
 at CERN). For a more detailed description of the CSAM user interface see
 https://lbdokuwiki.cern.ch/infrastructure:csamapplication
 
 .. container:: info 
-   Keep the CSAM screen on "Vue d’alarmes" and not "Historique"
-   to not miss new events
+  - Keep the CSAM screen on "Vue d'alarmes" and not "Historique"
+    to not miss new events
+  - `GIS portal <https://gis.cern.ch/gisportal/Alarm_Systems.htm>`__
 
 The following scenarios can trigger Level-3 alarms in the LHCb cavern or
 in the LHCb surface buildings.
@@ -609,14 +607,12 @@ in the LHCb surface buildings.
 | Smoke | Localize the fire (from the | The cavern, barracks and the  |
 | dete  | alarm message and the DSS   | surface buildings are         |
 | ction | panel). Use the maps in the | equipped with air-sampling    |
-|       | red binder or the `GIS      | smoke detectors. In case of a |
-|       | portal                      | fire underground, an          |
-|       |  <https://gis.cern.ch/gispo | evacuation alarm (siren) is   |
-|       | rtal/Alarm_Systems.htm>`__, | triggered. DSS will cut the   |
-|       | type the name of the        | power to the (LHCb) equipment |
-|       | sensor, SFDEI…, in the      | in the vicinity               |
-|       | search window, Follow the   |                               |
-|       | general instructions        |                               |
+|       | red binder or the GIS portal| smoke detectors. In case of a |
+|       | type the name of the        | fire underground, an          |
+|       |  sensor, SFDEI…, in the     | evacuation alarm (siren) is   |
+|       |  search window, Follow the  | triggered. DSS will cut the   |
+|       | general instructions        | power to the (LHCb) equipment |
+|       |                             | in the vicinity               |
 +-------+-----------------------------+-------------------------------+
 | ODH   | Figure out if the alarm     | Can be caused by a helium     |
 | (O    | comes from the ceiling (He  | leak at the LHC cryogenics    |
@@ -755,14 +751,14 @@ complementing the general fire detection system in the cavern. It
 comprises 15 modules configured for smoke detection. There is a
 dedicated console nest to the CSAM terminal
 (https://lbdokuwiki.cern.ch/infrastructure:snifferapplication) There are
-three (pre-)alarm levels corresponding to different thresholds. 
+three (pre-)alarm levels corresponding to different thresholds:
+
 - Pre-alarm 1 
 - Pre-alarm 2 
 - Alarm (=Level-3 alarm)
+- 
 Pre-alarms need to be reset by the SLIMOS.
 In case of a pre-alarm 2 or an alarm, DSS cuts the power to the affected detector
-
-.. _user-interface-1:
 
 User interface
 ~~~~~~~~~~~~~~
@@ -780,8 +776,6 @@ The SNIFFER application has four main views:
   of each module To create a plot, enter the module number in the
   text field next to the label "SSMOD-00", press "Enter" on the
   keyboard, and click on the button "GRAPHIQUE".
-
-.. _handling-alarms---instructions-1:
 
 Handling Alarms - Instructions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -816,7 +810,7 @@ Device).
 - **UX85** is the interlocked access point underground, controlling the
 access to the detector side of the cavern (UX85B).
 
-PZ85 has two access modes, GENERAL and CLOSED. 
+PZ85 has two access modes, GENERAL and CLOSED: 
 
 - The access mode can be changed from the access control terminal in
   the LHCb control room. In GENERAL mode, everybody who is authorized can enter. 
@@ -827,13 +821,13 @@ The UX85 access point is normally managed by the CCC (In restricted
 mode, the CCC can delegate the access point to the LHCb control room) 
 
 - During short accesses, UX85 is normally in RESTRICTED or RESTRICTED
-AUTOMATIC mode. 
+  AUTOMATIC mode. 
 - In RESTRICTED and RESTRICTED AUTOMATIC mode,
-everybody who enters the zone must take a safety token (key) which is
-distributed from the panel next to the PAD. The zone can only be closed
-if all keys have been returned. 
+  everybody who enters the zone must take a safety token (key) which is
+  distributed from the panel next to the PAD. The zone can only be closed
+  if all keys have been returned. 
 - During beam operation, the access
-point is closed and interlocked (VETO).
+  point is closed and interlocked (VETO).
 
 As Shift Leader, you are automatically included in an IMPACT request for
 the day of your shift. Make sure that you also fulfil the other
@@ -844,8 +838,8 @@ The default view of the LACS website shows the number of people in each
 zone, and their name. 
 
 - If the page is not updating, close and re-open
-the browser (shortcut "LACS IHM Web" on the desktop). Select "Kerberos"
-to authenticate
+  the browser (shortcut "LACS IHM Web" on the desktop). Select "Kerberos"
+  to authenticate
 
 Radiation Monitors
 ~~~~~~~~~~~~~~~~~~
@@ -905,8 +899,6 @@ Access to D4
 -  The procedure that must be followed in this case is described in
    `EDMS document 2739150 <https://edms.cern.ch/document/2739150>`__.
 
-.. _radiation-monitors-1:
-
 Radiation monitors
 ~~~~~~~~~~~~~~~~~~
 
@@ -929,7 +921,7 @@ of the cooling water (~50°). During Run periods, the operation of the
 LHCb dipole magnet is controlled by the CCC.
 
 - If the magnet trips, a DSS alarm is triggered: Call the Run Chief and
-inform him/her that the magnet tripped. 
+  inform him/her that the magnet tripped. 
 - Before being able to ramp up again, an interlock in the magnet
   safety system needs to be reset. 
 - Give the EP-DT magnet piquet 15 minutes to investigate, then call
@@ -939,7 +931,7 @@ inform him/her that the magnet tripped.
   you can give green light to the CCC to ramp the magnet back up
   (after consulting the Run Chief). 
 - If the trip was caused by something else than a power cut/glitch
-or if the cause of the trip has not been understood, call the DSS piquet.
+  or if the cause of the trip has not been understood, call the DSS piquet.
 
 Pushing Emergency-off button will also (indirectly) dump the beam!
 
@@ -1003,7 +995,7 @@ The Main tool of the ECS are:
   Configure the system, Start & Stop runs 
 - **AutoPilot**: Knows how to start and keep a run going from any state.
 - **BigBrother**: Based on the LHC state, it Controls SD Voltages,
- RunControl (partially) VELO Closure (not yet)
+  RunControl (partially) VELO Closure (not yet)
 
 Run Control
 -----------
@@ -1021,7 +1013,7 @@ global run settings
 **CONFIGURATION STEPS (before starting a Run)**
 
 1. Select the
-Sub-Systems & Sub-Detectors Included (normally ALL for Physics)
+   Sub-Systems & Sub-Detectors Included (normally ALL for Physics)
 2. Choose/check the "Activity" (Will be communicated)
 3. Check the "Trigger Config" (Will be communicated)
 4. Check Data Destin./Type ("Automatic" for Physics)
