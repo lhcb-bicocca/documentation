@@ -286,9 +286,13 @@ LHCb Timing
 ~~~~~~~~~~~
 
 The LHCb timing (clock) is centrally controlled/monitored via a set of
-electronics boards called RFRx, RF2TTC and BPIM. CHeck status on Big
-Brother Two modes of operations: - INTERNAL: clock is generated locally
-in LHCb for the whole detector - EXTERNAL: clock is received via the LHC
+electronics boards called RFRx, RF2TTC and BPIM. Check status on Big
+Brother.
+Two modes of operations:
+
+- INTERNAL: clock is generated locally
+in LHCb for the whole detector
+- EXTERNAL: clock is received via the LHC
 and it is in phase with the beams (synchronous) 
 
 .. container:: info
@@ -320,19 +324,19 @@ PLUME monitor the LHCb luminosity
 |                  |                                                       | t |
 |                  |                                                       | e |
 +==================+=======================================================+===+
-| :math:`\nu` (nu) | average number of pp interaction per bunch            |   |
+| :math:`{\nu}`    | average number of pp interaction per bunch            |   |
 |                  |                                                       |   |
 +------------------+-------------------------------------------------------+---+
-| :math:`mu`\ (mu) | average number of **visible** pp interaction per      |   |
+| :math:`{\mu}`    | average number of **visible** pp interaction per      |   |
 |                  | bunch                                                 |   |
 +------------------+-------------------------------------------------------+---+
 | pileup           | average number of pp interaction in visible events    |   |
 +------------------+-------------------------------------------------------+---+
-| cros             | probability of how manu pp collisions per unit time   |   |
-| s-section        | and lumi                                              |   |
+| cross-section    | probability of how manu pp collisions per unit time   |   |
+|                  | and lumi                                              |   |
 +------------------+-------------------------------------------------------+---+
 
-+--------------------------------------------------+--------------+-----------+
++-------------------------------------------------+--------------+------------+
 | Alarm on screen                                 | LED status   | Action     |
 +=================================================+==============+============+
 | **LHC leveling receiver not running**           | First LED is | Call       |
@@ -382,6 +386,7 @@ the monitoring farm :math:`->` It must be ``RUNNING`` always when we
 take data
 
 Data Sources:
+
 - Detector raw data
 - Reconstructed quantities: output of HLT or of reconstruction
 monitoring jobs
@@ -406,7 +411,6 @@ account (not the online one). Histograms can be looked at ``Live`` or in
    it will open the previous or next pages in the folder structure
 
 .. container:: info
-
    -  Reference histograms are histograms selected by detector experts
       to show how the distributions are supposed to look like when
       everything works well
@@ -438,8 +442,7 @@ over other Shift Leader tasks.
 
 SLIMOS are expected to:
 
-- be knowledgeable about the safety aspects of
-  the experiment 
+- be knowledgeable about the safety aspects of the experiment
 - handle alarms and emergency situations 
 - operate safety systems
 
@@ -476,7 +479,7 @@ Detector Safety System (DSS)
 ----------------------------
 
 The purpose is to detect abnormal and potentially harmful situations and
-minimise damage to the experiment’s equipment by taking automated
+minimise damage to the experiment's equipment by taking automated
 protective actions.
 
 - Front-end: (safety-critical part) is a redundant PLC system. It runs
@@ -499,10 +502,10 @@ DSS has a dedicated set of sensors connected to the DSS I/O modules. The
 inputs can be general or specific to a subdetector. There are three
 types of inputs:
 
-- Digital inputs (prefix "DI") are dry contacts that
- are normally closed (state "False"). Examples include signals from
-cooling plant PLCs or from the smoke detection system.
-- 4 – 20 mA or 0 – 10 V analogue inputs (prefix "AI").
+- Digital inputs (prefix "DI") are dry contacts that are normally
+  closed (state "False"). Examples include signals from
+  cooling plant PLCs or from the smoke detection system.
+- 4 - 20 mA or 0 - 10 V analogue inputs (prefix "AI").
 - PT100 temperature probes (prefix "PT").
 
 Inputs disappear automatically once the sensor has returned to its
@@ -541,7 +544,7 @@ light on the emergency panel.
    precedence to ``Level-3 alarms``.
 3. Acknowledge the alarm clicking on it
 4. If the action ``CCC_Alarm_signal_sent`` was triggered, call CCC TI
-(7 22 01) to confirm that you are aware and taking care of the alarm.
+   (7 22 01) to confirm that you are aware and taking care of the alarm.
 5. Right-click to show details info (if in doubt call DSS piquet
    to clarify what to do, or call related subsystem piquet)
 6. Reset the actions once the problem is resolved
