@@ -1,7 +1,7 @@
 Bicocca INFN Sever
 ##################
 We have a server running in the cluster of the MIB INFN section.
-The server runs on a CentOS7 operating system and features
+The server runs on a Alma9 operating system and features
 
 - NVIDIA A100 80Gb GPU
 - 2x26 core Intel Xeon 5320 2.2GHz CPU
@@ -43,8 +43,6 @@ Available services include:
 
 - cvmfs
 - eos
-- cuda12.5
-- gcc11.4.1
 - docker
 
 For any further request, please contact **brownie-admins@lists.mib.infn.it**.
@@ -55,12 +53,12 @@ Please note that to access your *eos* area, you should first create your afs tok
 
   $ kinit <cern_user_name>@CERN.CH
 
-The CUDA libraries are not automatically available at login, to load them
-
-.. code-block:: console
-  
-  $ load_cuda
-
+.. The CUDA libraries are not automatically available at login, to load them
+..
+.. .. code-block:: console
+..  
+..  $ load_cuda
+..
 To use ROOT the simplest is to load an environment from cvmfs
 
 .. code-block:: console
