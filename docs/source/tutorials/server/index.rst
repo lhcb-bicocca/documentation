@@ -7,4 +7,5 @@ Server Tutorials
    
    lhcb_environment
    tensorflow
+   pytorch
    useful
