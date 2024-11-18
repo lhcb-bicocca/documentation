@@ -9,3 +9,5 @@ Information on specific shift types can be found below.
    :caption: Contents:
    
    dqcs.rst
+   dqcs_notes.rst
+   datamanager_shiftleader.rst
