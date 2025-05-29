@@ -1,7 +1,7 @@
-Bicocca INFN Sever
-##################
-We have a server running in the cluster of the MIB INFN section.
-The server runs on a Alma9 operating system and features
+Bicocca INFN Severs
+###################
+We have two servers running in the cluster of the MIB INFN section.
+The servers run on a Alma9 operating system and one (Brownie) features
 
 - NVIDIA A100 80Gb GPU
 - 2x26 core Intel Xeon 5320 2.2GHz CPU
@@ -9,13 +9,21 @@ The server runs on a Alma9 operating system and features
 - 3x1920Gb SSD SATAIII disks
 - 4x18Tb SATAIII 7200rpm HDD disks
 
+while the other one (Pearly-Gates) features
+
+- NVIDIA A6000 40Gb GPU
+- 2x24 core AMD EPYC 7402P 2.8GHz CPU
+- 128Gb RAM
+- 2x1920Gb SSD SATAIII disks
+- 4x18Tb SATAIII 7200rpm HDD disks
+
 Requesting an account
 *********************
-The server is connected to the accounting system of the MIB INFN section.
+The servers are connected to the accounting system of the MIB INFN section.
 First you need to have a valid computing account with MIB-INFN and then you can ask for access to the server by sending an email to **brownie-admins@lists.mib.infn.it**.
 Once approved, you will be available to connect with the username and password of your MIB account.
 
-You will also be added to the brownie users' mailing list (**brownie-users@lists.mib.infn.it**). 
+You will also be added to the servers users' mailing list (**brownie-users@lists.mib.infn.it**). 
 Feel free to send messages to this list for discussing troubles or software requests.
 
 Connection
