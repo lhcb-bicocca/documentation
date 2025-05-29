@@ -34,7 +34,8 @@ There are two options to connect in one command. Either
 
 .. code-block:: console
 
- $ ssh -J <user_name>@cerbero.mib.infn.it <user_name>@brownie
+ $ ssh -J <user_name>@cerbero.mib.infn.it <user_name>@brownie # for brownie
+ $ ssh -J <user_name>@cerbero.mib.infn.it <user_name>@pearly-gates # for pearly-gates
  
 or add the following lines to your ``.ssh/config``:
 
