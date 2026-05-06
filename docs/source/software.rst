@@ -9,6 +9,8 @@ functions to manipulate ROOT objects in python. It is particularly useful to pre
 LHCb-style plots, declare histograms and trees, and run RooFit fits in a shorter number
 of commands than usual. `AnalysisHelpers <https://gitlab.cern.ch/mamartin/AnalysisHelpers>`_ (`API <https://maurizios-analysis-helpers.docs.cern.ch>`_)
 
+A python-based version of the package can be found on github as `analysis_helpers <https://github.com/cpviolation/analysis_helpers>`_ (`Documentation and API <https://cpviolation.github.io/analysis_helpers/>`_). To include it as as dependency in your analysis environemnts, simply add `git+ssh://github.com/cpviolation/analysis_helpers.git` to your requirements or `pip install` it.
+
 PlotUtils
 ^^^^^^^^^
 A collection of helpful functions and classes for plotting pretty graphs.. the most important aspect of any analysis. `PlotUtils <https://github.com/eddieshields/PlotUtils>`_
